@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light vh-10">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <ul class="navbar-nav ms-xl-auto">

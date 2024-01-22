@@ -1,9 +1,11 @@
 <template>
-  <Nav />
+  <div class="min-vh-100">
+    <Nav />
 
-  <div class="container min-vh-100" style="overflow: hidden">
-    <!-- <Login /> -->
-    <router-view></router-view>
+    <div class="container" style="overflow: hidden">
+      <!-- <Login /> -->
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 <script>

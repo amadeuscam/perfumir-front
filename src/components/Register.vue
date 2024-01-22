@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex justify-content-center align-items-center">
+  <div class="d-flex justify-content-center align-items-center" style="height: 750px;">
     <form class="m-auto" @submit.prevent="handleSubmit">
       <h1 class="h3 mb-3 fw-normal">Registrar</h1>
 
@@ -10,6 +10,7 @@
           v-model="username"
           class="form-control"
           id="floatingInput"
+          required
           placeholder="juanito"
         />
       </div>
@@ -21,6 +22,7 @@
           class="form-control"
           id="floatingPassword"
           placeholder="****"
+          required
         />
       </div>
 
@@ -32,6 +34,7 @@
           class="form-control"
           id="floatingPassword"
           placeholder="****"
+          required
         />
       </div>
 

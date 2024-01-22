@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex justify-content-center align-items-center flex-column">
+  <div class="d-flex justify-content-center align-items-center flex-column" style="height: 750px;">
    <Eror :error="error" />
     <form class="m-auto" @submit.prevent="handleSubmit">
       <h1 class="h3 mb-3 fw-normal">Login</h1>
