@@ -1,12 +1,5 @@
 <template>
-  <div class="min-vh-100">
-    <Nav />
-
-    <div class="container" style="overflow: hidden">
-      <!-- <Login /> -->
-      <router-view></router-view>
-    </div>
-  </div>
+  <router-view></router-view>
 </template>
 <script>
 import Nav from "./components/Nav.vue";
@@ -16,5 +9,4 @@ export default {
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

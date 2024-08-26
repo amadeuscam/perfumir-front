@@ -1,0 +1,1085 @@
+<template>
+  <div class="container-fluid mt-5">
+    <button class="btn btn-md btn-dark mb-3" @click.prevent="$router.go(-1)">Volver</button>
+
+    <div class="row">
+      <form class="col-12 col-md-8">
+        <h2>
+          Add Formula <span style="color: #848484"> {{ formula.name }}</span>
+        </h2>
+        <div class="form-floating mb-3">
+          <select class="form-select" id="dilutions" v-model="typeFormula" aria-label="Floating label select example">
+            <option value="weight">Weight</option>
+            <option value="ppt">PPT</option>
+            <option value="procentage">Procentage</option>
+          </select>
+          <label for="name">Construct formula with:</label>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-12" v-if="formula.status == 'done'">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="name" placeholder="0.100" required v-model="formulaDone.amountToMake" @change="changeAmountToMake()" />
+                  <label for="name">Amount To Make</label>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="name" placeholder="0.100" required v-model="formulaDone.desiredProcentage" @change="changeDesiredProcentage()" />
+                  <label for="name">Desired Procentage</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- the way we can add te ingredients  -->
+          <div class="col-12 col-md-12" v-if="formula.status !== 'done'">
+            <Weight @ingredientSelectedHAndler="handleSelectIngredient" v-if="typeFormula == 'weight'" />
+            <Ppt @ingredientSelectedHAndler="handleSelectIngredient" v-if="typeFormula == 'ppt'" />
+            <Procentage @ingredientSelectedHAndler="handleSelectIngredient" v-if="typeFormula == 'procentage'" />
+          </div>
+
+          <Table :ingredient="piramidIngredient" />
+          <!-- <div class="col-12 col-md-12" style="min-height: 40vh">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Dilution</th>
+                  <th scope="col">Weight (g)</th>
+                  <th scope="col">%Abs</th>
+                  <th scope="col">%Rel</th>
+                  <th scope="col">Ppt</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="shaded" v-if="formula.basenote.amount">
+                  <td scope="row">BASE NOTES</td>
+                  <td></td>
+                  <td>{{ formula.basenote.amount.toFixed(3) }}</td>
+                  <td>{{ formula.basenote.rel.toFixed(2) }}</td>
+                  <td>{{ formula.basenote.abs.toFixed(2) }}</td>
+                  <td>{{ formula.basenote.ppt.toFixed(0) }}</td>
+                </tr>
+                <tr v-for="(baseNote, index) in baseNotes" :key="index" style="position: relative">
+                  <th scope="row">
+                    <v-icon name="ri-close-circle-line" scale="1" fill="red" hover
+                      style="margin-right: 10px; cursor: pointer" @click="removeIngredient(baseNote)"
+                      title="Delete Ingredient" />
+                    <span>{{ baseNote.ingredientName }}</span>
+                  </th>
+                  <td style="width: 15% !important">
+                    <input type="text" class="form-control" :value="baseNote.dilutionOfIngredient"
+                      v-if="formula.status != 'done'"
+                      @change="updateIngredient($event, baseNote, 'dilutionOfIngredient')" style="width: 100%" />
+
+                    <input type="text" class="form-control" :value="baseNote.prodDilutionOfIngredient"
+                      v-if="formula.status == 'done'"
+                      @change="updateIngredient($event, baseNote, 'dilutionOfIngredient')" style="width: 100%" />
+                  </td>
+
+                  <td style="width: 15% !important">
+                    <input type="text" class="form-control" @change="updateIngredient($event, baseNote, 'amount')"
+                      :value="baseNote.amount.toFixed(3)" style="width: 100%" v-if="formula.status != 'done'" />
+
+                    <input type="text" class="form-control" v-if="formula.status == 'done' && baseNote.amountToUse"
+                      :value="baseNote.amountToUse.toFixed(3)" style="width: 100%"
+                      :disabled="formula.status == 'done'" />
+                  </td>
+
+                  <td>
+                    <p> {{ baseNote.rel.toFixed(2) }}</p>
+                    <p v-if="baseNote.ifra && checkIfra(baseNote.rel, baseNote.ifra)"
+                      :style="[checkIfra(baseNote.rel, baseNote.ifra) ? { 'color': 'red' } : {}]"> Ifra Limit {{
+                        baseNote.ifra }}</p>
+
+
+                  </td>
+                  <td>{{ baseNote.abs.toFixed(2) }}</td>
+                  <td>{{ baseNote.ppt.toFixed(0) }}</td>
+                </tr>
+
+                <tr class="heart" v-if="formula.heartnote.amount">
+                  <td scope="row">HEART NOTES</td>
+                  <td></td>
+                  <td>{{ formula.heartnote.amount.toFixed(3) }}</td>
+                  <td>{{ formula.heartnote.rel.toFixed(2) }}</td>
+                  <td>{{ formula.heartnote.abs.toFixed(2) }}</td>
+                  <td>{{ formula.heartnote.ppt.toFixed(0) }}</td>
+                </tr>
+                <tr v-for="(heartNote, index) in heartNotes" :key="index">
+                  <th scope="row">
+                    <v-icon name="ri-close-circle-line" scale="1" fill="red" hover
+                      style="margin-right: 10px; cursor: pointer" @click="removeIngredient(heartNote)"
+                      title="Delete Ingredient" />
+                    {{ heartNote.ingredientName }}
+                  </th>
+
+                  <td style="width: 15% !important">
+                    <input type="text" class="form-control" :value="heartNote.dilutionOfIngredient"
+                      v-if="formula.status != 'done'"
+                      @change="updateIngredient($event, heartNote, 'dilutionOfIngredient')" style="width: 100%" />
+
+                    <input type="text" class="form-control" :value="heartNote.prodDilutionOfIngredient"
+                      v-if="formula.status == 'done'"
+                      @change="updateIngredient($event, heartNote, 'dilutionOfIngredient')" style="width: 100%" />
+                  </td>
+
+                  <td style="width: 15% !important">
+                    <input type="text" class="form-control" @change="updateIngredient($event, heartNote, 'amount')"
+                      :value="heartNote.amount.toFixed(3)" style="width: 100%" v-if="formula.status != 'done'" />
+
+                    <input type="text" class="form-control" v-if="formula.status == 'done' && heartNote.amountToUse"
+                      :value="heartNote.amountToUse.toFixed(3)" style="width: 100%"
+                      :disabled="formula.status == 'done'" />
+                  </td>
+                 
+                  <td>
+                    <p> {{ heartNote.rel.toFixed(2) }}</p>
+                    <p v-if="heartNote.ifra && checkIfra(heartNote.rel, heartNote.ifra)"
+                      :style="[checkIfra(heartNote.rel, heartNote.ifra) ? { 'color': 'red' } : {}]"> Ifra Limit {{
+                        heartNote.ifra }}</p>
+                  </td>
+                  <td>{{ heartNote.abs.toFixed(2) }}</td>
+                  <td>{{ heartNote.ppt.toFixed(0) }}</td>
+                </tr>
+
+                <tr class="top" v-if="formula.topnote.amount">
+                  <td scope="row">TOP NOTES</td>
+                  <td></td>
+                  <td>{{ formula.topnote.amount.toFixed(3) }}</td>
+                  <td>{{ formula.topnote.rel.toFixed(2) }}</td>
+                  <td>{{ formula.topnote.abs.toFixed(2) }}</td>
+                  <td>{{ formula.topnote.ppt.toFixed(0) }}</td>
+                </tr>
+                <tr v-for="(topNote, index) in topNotes" :key="index">
+                  <th scope="row">
+                    <v-icon name="ri-close-circle-line" scale="1" fill="red" hover
+                      style="margin-right: 10px; cursor: pointer" @click="removeIngredient(topNote)"
+                      title="Delete Ingredient" />
+                    {{ topNote.ingredientName }}
+                  </th>
+
+                  <td style="width: 15% !important">
+                    <input type="text" class="form-control" :value="topNote.dilutionOfIngredient"
+                      v-if="formula.status != 'done'"
+                      @change="updateIngredient($event, topNote, 'dilutionOfIngredient')" style="width: 100%" />
+
+                    <input type="text" class="form-control" :value="topNote.prodDilutionOfIngredient"
+                      v-if="formula.status == 'done'"
+                      @change="updateIngredient($event, topNote, 'dilutionOfIngredient')" style="width: 100%" />
+
+
+                  </td>
+
+                  <td style="width: 15% !important">
+                    <input type="text" class="form-control" @change="updateIngredient($event, topNote, 'amount')"
+                      :value="topNote.amount.toFixed(3)" style="width: 100%" v-if="formula.status != 'done'" />
+
+                    <input type="text" class="form-control" v-if="formula.status == 'done' && topNote.amountToUse"
+                      :value="topNote.amountToUse.toFixed(3)" style="width: 100%"
+                      :disabled="formula.status == 'done'" />
+
+                  </td>
+ 
+                  <td>
+
+                    <p> {{ topNote.rel.toFixed(2) }}</p>
+                    <p v-if="topNote.ifra && checkIfra(topNote.rel, topNote.ifra)"
+                      :style="[checkIfra(topNote.rel, topNote.ifra) ? { 'color': 'red' } : {}]"> Ifra Limit {{
+                        topNote.ifra
+                      }}</p>
+                  </td>
+                  <td>{{ topNote.abs.toFixed(2) }}</td>
+                  <td>{{ topNote.ppt.toFixed(0) }}</td>
+                </tr>
+
+                <tr class="alch" v-if="formula.alch.amount">
+                  <td scope="row">Alchool</td>
+                  <td></td>
+                  <td>{{ formula.alch.amount.toFixed(3) }}</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr v-for="(alchool, index) in Alchool" :key="index">
+                  <th scope="row">
+                    <v-icon name="ri-close-circle-line" scale="1" fill="red" hover
+                      style="margin-right: 10px; cursor: pointer" @click="removeIngredient(alchool)"
+                      title="Delete Ingredient" />
+                    {{ alchool.ingredientName }}
+                  </th>
+                  <td>{{ alchool.dilutionOfIngredient }}</td>
+
+                  <td style="width: 15% !important">
+                    <input type="text" class="form-control" @change="updateIngredient($event, alchool, 'amount')"
+                      :value="alchool.amount.toFixed(3)" style="width: 100%" />
+                  </td>
+
+                
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>  -->
+        </div>
+      </form>
+      <div class="col-12 col-md-4">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="form-floating mb-3">
+              <select class="form-select" id="status" v-model="formula.status" @change="statusChange($event)" aria-label="Floating label select example">
+                <option value="in_progress">In Progress</option>
+                <option value="done">Done</option>
+              </select>
+              <label for="status">Status of Formula</label>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="name" placeholder="coumarin" required v-model="formula.version" />
+              <label for="name">Version</label>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="name" placeholder="coumarin" required v-model="formula.ppt" @change.prevent="updatePPT()" />
+              <label for="name">PPT * </label>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-12 text-center">
+            <button class="btn btn-lg w-100 btn-success mb-3" @click.prevent="submitData()">Submit Formula</button>
+          </div>
+
+          <div class="col-12 col-md-12" v-if="formula.status !== 'done'">
+            <div class="row">
+              <div class="col-6 col-md-6">
+                <h6>
+                  Total (gr): <br />
+                  <span style="font-size: 2rem">{{ formula.total.toFixed(3) }}</span>
+                </h6>
+              </div>
+              <div class="col-6 col-md-6">
+                <h6>
+                  Concentrate: <br />
+                  <span style="font-size: 2rem">{{ formula.concentrate.toFixed(3) }}</span>
+                </h6>
+              </div>
+              <div class="col-6 col-md-6">
+                <h6>
+                  Final Concentrate: <br />
+                  <span style="font-size: 2rem">
+                    {{ formula.final_concentrate_perfume ? formula.final_concentrate_perfume.toFixed(2) : 0 }}
+                    %</span
+                  >
+                </h6>
+              </div>
+              <div class="col-6 col-md-6">
+                <h6>
+                  Total Ingredients: <br />
+                  <span style="font-size: 2rem">
+                    {{ formula.totalIngredients }}
+                  </span>
+                </h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-12" v-if="formula.status == 'done'">
+            <div class="row">
+              <div class="col-6 col-md-6">
+                <h6>
+                  Total Amount Of Alcool to Add: <br />
+                  <span style="font-size: 2rem">{{ formulaDone.alchoolAdd.toFixed(3) }}</span>
+                </h6>
+              </div>
+              <div class="col-6 col-md-6">
+                <h6>
+                  Total: <br />
+                  <span style="font-size: 2rem">{{ formulaDone.totalAmount.toFixed(3) }} gr</span>
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+// import { OhVueIcon } from "oh-vue-icons";
+
+// import VueMultiselect from "vue-multiselect";
+import { useRoute } from "vue-router";
+import customAxios from "../../axios";
+import Table from "../formula_body/Table.vue";
+import Ppt from "../formula_maker/Ppt.vue";
+import Procentage from "../formula_maker/Procentage.vue";
+import Weight from "../formula_maker/Weight.vue";
+
+export default {
+  components: {
+    // VueMultiselect,
+    Weight,
+    Ppt,
+    Procentage,
+    Table,
+    // "v-icon": OhVueIcon,
+  },
+  data() {
+    return {
+      id: null,
+      ingredients: [],
+      typeFormula: "weight",
+      ingredientsBackup: [],
+      dilutions: [],
+      baseNotes: [],
+      heartNotes: [],
+      topNotes: [],
+      Alchool: [],
+      ingredientSelected: null,
+      dilutionSelected: null,
+      quantity: null,
+      piramidIngredient: null,
+      formulaDone: {
+        desiredProcentage: 20,
+        amountToMake: 10,
+        currentAmountOfConcentrate: 0,
+        desiredAmountConcentrate: 0,
+        desiredAmountAlchool: 0,
+        scaleFactor: 0,
+        totalAmount: 0,
+        alchoolAdd: 0,
+      },
+
+      formula: {
+        total: 0,
+        concentrate: 0,
+        ppt: 1000,
+        version: null,
+        status: "in_progress",
+        totalIngredients: 0,
+        final_concentrate_perfume: 0,
+        basenote: {
+          ppt: 0,
+          amount: 0,
+          rel: 0,
+          abs: 0,
+        },
+        heartnote: {
+          ppt: 0,
+          amount: 0,
+          rel: 0,
+          abs: 0,
+        },
+        topnote: {
+          ppt: 0,
+          amount: 0,
+          rel: 0,
+          abs: 0,
+        },
+        alch: {
+          ppt: 0,
+          amount: 0,
+          rel: 0,
+          abs: 0,
+        },
+      },
+    };
+  },
+  created() {
+    const route = useRoute();
+    this.id = route.params.id;
+    console.log(this.id);
+    console.log(route.params);
+    console.log(route.params.fmanagementId);
+    console.log(route.params.formulaId);
+    if (!this.id && route.params.fmanagementId.length > 0) {
+      this.id = route.params.fmanagementId;
+    }
+    console.log(this.id);
+    if (route.params.fmanagementId && route.params.formulaId) {
+      this.copyFormula(route.params.fmanagementId, route.params.formulaId);
+    }
+  },
+  methods: {
+    handleSelectIngredient(value) {
+      this.piramidIngredient = {};
+      const [ingredient, quantity, dilution] = value;
+
+      this.ingredientSelected = ingredient;
+      this.dilutionSelected = dilution;
+      this.quantity = quantity;
+      const payload = {
+        ingredient: ingredient,
+        dilution: dilution,
+        quantity: quantity,
+      };
+
+      const ingredientFormula = {
+        ingredientName: ingredient.name,
+        pyramidLevel: ingredient.pyramidLevel,
+        amount: Number(quantity),
+        dilutionOfIngredient: dilution,
+        ifra: ingredient.ifra,
+        alcohol: 100 - dilution,
+        ppt: 0,
+        material_raw: 0,
+        materialDoneRaw: 0,
+        rel: 0,
+        abs: 0,
+      };
+
+      // this.addIngredient();
+      this.piramidIngredient = ingredientFormula;
+      // console.log(this.piramidIngredient);
+
+      // this.tableIngredient.value.addIngredient(payload);
+    },
+
+    async copyFormula(fmanagementId, formulaId) {
+      await this.getIngredients();
+      customAxios({
+        method: "get",
+        url: `api/v1/formulas/${fmanagementId}/${formulaId}`,
+      })
+        .then((res) => {
+          console.log(res.data);
+          this.formula.status = res.data.status;
+          this.formula.version = res.data.version;
+          this.addIngredient(res.data);
+          // this.getIngredients();
+        })
+        .catch((error) => {
+          this.error = error.response.data.message;
+        });
+    },
+    async getIngredients() {
+      this.ingredients = [];
+
+      await customAxios({
+        method: "get",
+        url: "api/v1/ingredients",
+      })
+        .then((res) => {
+          this.ingredients = res.data;
+          this.ingredientsBackup = res.data;
+        })
+        .catch((error) => {
+          this.error = error.response.data.message;
+        });
+
+      const alchool = {
+        name: "Alchool",
+        casNumber: "91-64-5",
+        pyramidLevel: "alch",
+        odorDescription: "Acxhool for perfume",
+        type: "syntetic",
+        odorImpact: 0,
+        odorLife: 0,
+        dilutions: [
+          {
+            quantity: 100,
+          },
+        ],
+        olfactiveFamilies: [],
+      };
+
+      this.ingredients.push(alchool);
+    },
+
+    async submitData() {
+      console.log("submit data");
+      console.log(this.baseNotes);
+      console.log(this.heartNotes);
+      console.log(this.topNotes);
+      console.log(this.Alchool);
+      const data = {
+        name: this.formula.name,
+        status: this.formula.status,
+        version: this.formula.version,
+        formulaIngredients: [],
+      };
+      let id_response = null;
+
+      await customAxios({
+        method: "post",
+        url: `api/v1/formulas/add/` + this.id,
+        data: data,
+      })
+        .then((res) => {
+          console.log(res.data);
+          id_response = res.data.id;
+          // this.$toast.success("Formula añadida correctamente", {
+          //   duration: 2000,
+          // });
+        })
+        .catch((error) => {
+          console.log(error);
+          this.error = error;
+        });
+
+      this.baseNotes.forEach((note) => {
+        data.formulaIngredients.push({
+          ingredientName: note.ingredientName,
+          pyramidLevel: note.pyramidLevel,
+          amount: note.amount,
+          dilutionOfIngredient: note.dilutionOfIngredient,
+          alcohol: note.alcohol,
+        });
+      });
+
+      this.heartNotes.forEach((note) => {
+        data.formulaIngredients.push({
+          ingredientName: note.ingredientName,
+          pyramidLevel: note.pyramidLevel,
+          amount: note.amount,
+          dilutionOfIngredient: note.dilutionOfIngredient,
+          alcohol: note.alcohol,
+        });
+      });
+
+      this.topNotes.forEach((note) => {
+        data.formulaIngredients.push({
+          ingredientName: note.ingredientName,
+          pyramidLevel: note.pyramidLevel,
+          amount: note.amount,
+          dilutionOfIngredient: note.dilutionOfIngredient,
+          alcohol: note.alcohol,
+        });
+      });
+
+      this.Alchool.forEach((note) => {
+        data.formulaIngredients.push({
+          ingredientName: note.ingredientName,
+          pyramidLevel: note.pyramidLevel,
+          amount: note.amount,
+          dilutionOfIngredient: note.dilutionOfIngredient,
+          alcohol: note.alcohol,
+        });
+      });
+
+      console.log(data);
+      console.log(data.formulaIngredients);
+
+      await customAxios({
+        method: "post",
+        url: `api/v1/formula-ingredient/ingredients/` + id_response,
+        data: data.formulaIngredients,
+      })
+        .then((res) => {
+          console.log(res.data);
+          this.$toast.success("Formula añadida correctamente", {
+            duration: 2000,
+          });
+        })
+        .catch((error) => {
+          console.log(error);
+          this.error = error;
+        });
+    },
+    addIngredient(fill = null) {
+      if (fill) {
+        fill.formulaIngredients.forEach((elem) => {
+          this.ingredients = this.ingredients.filter((x) => x.name != elem.ingredientName);
+          console.log(elem);
+          this.addIngredientIndividual({
+            ingredientName: elem.ingredientName,
+            pyramidLevel: elem.pyramidLevel,
+            amount: Number(elem.amount),
+            dilutionOfIngredient: elem.dilutionOfIngredient,
+            alcohol: elem.alcohol,
+            ifra: elem.ifra,
+            ppt: 0,
+            material_raw: 0,
+            rel: 0,
+            abs: 0,
+          });
+        });
+      } else {
+        if (!this.quantity) {
+          return;
+        }
+
+        const ingredientFormula = {
+          ingredientName: this.ingredientSelected.name,
+          pyramidLevel: this.ingredientSelected.pyramidLevel,
+          amount: Number(this.quantity),
+          dilutionOfIngredient: this.dilutionSelected,
+          ifra: this.ingredientSelected.ifra,
+          alcohol: 100 - this.dilutionSelected,
+          ppt: 0,
+          material_raw: 0,
+          materialDoneRaw: 0,
+          rel: 0,
+          abs: 0,
+        };
+
+        console.log(ingredientFormula);
+        this.addIngredientIndividual(ingredientFormula);
+      }
+    },
+    addIngredientIndividual(ingredientFormula) {
+      switch (ingredientFormula.pyramidLevel) {
+        case "base":
+          //
+          this.baseNotes.push(this.precalculate(ingredientFormula));
+          console.log(this.baseNotes);
+          break;
+        case "heart":
+          this.heartNotes.push(this.precalculate(ingredientFormula));
+          break;
+        case "top":
+          this.topNotes.push(this.precalculate(ingredientFormula));
+          break;
+        case "alch":
+          this.Alchool.push(this.precalculate(ingredientFormula));
+          break;
+        default:
+          break;
+      }
+
+      this.formula.total = this.formula.basenote.amount + this.formula.heartnote.amount + this.formula.topnote.amount + this.formula.alch.amount;
+      this.quantity = null;
+      this.dilutionSelected = null;
+      this.updatePPTS();
+    },
+    updatePPTS() {
+      this.baseNotes = this.recalculateIngredients(this.baseNotes, "base");
+      this.heartNotes = this.recalculateIngredients(this.heartNotes, "heart");
+      this.topNotes = this.recalculateIngredients(this.topNotes, "top");
+      // console.log(this.Alchool);
+
+      this.formula.totalIngredients = this.baseNotes.length + this.heartNotes.length + this.topNotes.length + this.Alchool.length;
+
+      this.formula.final_concentrate_perfume = (((100 / this.formula.total) * this.formula.concentrate) / 100) * 100;
+    },
+    precalculate(ingredient, action) {
+      // formulas
+      console.log(ingredient);
+      const material_raw = ingredient.amount - (ingredient.amount * ingredient.alcohol) / 100;
+      const materialDoneRaw = (ingredient.amount * ingredient.dilutionOfIngredient) / 100;
+      // console.log(material_raw);
+      // console.log(materialDoneRaw);
+      if (ingredient.pyramidLevel !== "alch") {
+        this.formula.concentrate += material_raw;
+        this.formulaDone.currentAmountOfConcentrate += materialDoneRaw;
+        console.log(this.formulaDone.currentAmountOfConcentrate);
+      }
+
+      const ppts = (this.formula.ppt / this.formula.concentrate) * material_raw;
+      ingredient.ppt = ppts;
+      ingredient.material_raw = material_raw;
+      ingredient.materialDoneRaw = materialDoneRaw;
+
+      switch (ingredient.pyramidLevel) {
+        case "base":
+          this.formula.basenote.amount += ingredient.amount;
+          break;
+        case "heart":
+          this.formula.heartnote.amount += ingredient.amount;
+          break;
+        case "top":
+          this.formula.topnote.amount += ingredient.amount;
+          break;
+        case "alch":
+          this.formula.alch.amount += ingredient.amount;
+          break;
+        default:
+          break;
+      }
+
+      return ingredient;
+    },
+
+    recalculateIngredients(notes, piramidLevel) {
+      const ppts = this.formula.ppt / this.formula.concentrate;
+      // console.log(this.formula.total);
+
+      notes = notes.map((note) => (true ? { ...note, ppt: ppts * note.material_raw } : note));
+      notes = notes.map((note) => (true ? { ...note, rel: (note.material_raw / this.formula.total) * 100 } : note));
+      notes = notes.map((note) =>
+        true
+          ? {
+              ...note,
+              abs: (note.material_raw / this.formula.concentrate) * 100,
+            }
+          : note
+      );
+
+      switch (piramidLevel) {
+        case "base":
+          this.formula.basenote.ppt = notes.reduce((n, { ppt }) => n + ppt, 0);
+          this.formula.basenote.rel = notes.reduce((n, { rel }) => n + rel, 0);
+          this.formula.basenote.abs = notes.reduce((n, { abs }) => n + abs, 0);
+          break;
+        case "heart":
+          this.formula.heartnote.ppt = notes.reduce((n, { ppt }) => n + ppt, 0);
+          this.formula.heartnote.rel = notes.reduce((n, { rel }) => n + rel, 0);
+          this.formula.heartnote.abs = notes.reduce((n, { abs }) => n + abs, 0);
+          break;
+        case "top":
+          this.formula.topnote.ppt = notes.reduce((n, { ppt }) => n + ppt, 0);
+          this.formula.topnote.rel = notes.reduce((n, { rel }) => n + rel, 0);
+          this.formula.topnote.abs = notes.reduce((n, { abs }) => n + abs, 0);
+          break;
+
+        default:
+          break;
+      }
+
+      return notes;
+    },
+    updatePPT() {
+      this.updatePPTS();
+    },
+    updateUtils(value, ingredient, scope, arrNotes) {
+      // console.log(value, ingredient, scope, arrNotes);
+      let objIndex = arrNotes.findIndex((obj) => obj.ingredientName == ingredient.ingredientName);
+
+      if (scope == "amount") {
+        //Update object's name property.
+        const res = Number(ingredient.amount) - Number(value);
+        console.log(parseFloat(res) < parseFloat(0));
+        console.log(parseFloat(res));
+        console.log(parseFloat(0));
+        console.log(Math.abs(res));
+        if (parseFloat(res) < parseFloat(0)) {
+          this.formula.total += Math.abs(res);
+
+          switch (ingredient.pyramidLevel) {
+            case "base":
+              this.formula.basenote.amount += Math.abs(res);
+              break;
+            case "heart":
+              this.formula.heartnote.amount += Math.abs(res);
+              break;
+            case "top":
+              this.formula.topnote.amount += Math.abs(res);
+              break;
+            case "alch":
+              this.formula.alch.amount += Math.abs(res);
+              break;
+            default:
+              break;
+          }
+        } else {
+          this.formula.total -= res;
+
+          switch (ingredient.pyramidLevel) {
+            case "base":
+              this.formula.basenote.amount -= res;
+              break;
+            case "heart":
+              this.formula.heartnote.amount -= res;
+              break;
+            case "top":
+              this.formula.topnote.amount -= res;
+              break;
+            case "alch":
+              this.formula.alch.amount -= res;
+              break;
+            default:
+              break;
+          }
+        }
+        //el valor antiguo
+        const material_raw = ingredient.amount - (ingredient.amount * ingredient.alcohol) / 100;
+        // el valor nuevo
+        const material_raw2 = Number(value) - (Number(value) * ingredient.alcohol) / 100;
+
+        if (ingredient.pyramidLevel !== "alch") {
+          console.log(Math.abs(material_raw - material_raw2));
+          console.log(material_raw - material_raw2);
+          this.formula.concentrate -= material_raw - material_raw2;
+        }
+
+        arrNotes[objIndex][scope] = Number(value);
+        const ppts = (this.formula.ppt / this.formula.concentrate) * material_raw2;
+        arrNotes[objIndex].ppt = ppts;
+        arrNotes[objIndex].material_raw = material_raw2;
+        return arrNotes;
+      } else {
+        const alchool = 100 - Number(value);
+        const material_raw = ingredient.amount - (ingredient.amount * ingredient.alcohol) / 100;
+        const material_raw2 = Number(ingredient.amount) - (Number(ingredient.amount) * alchool) / 100;
+        this.formula.concentrate -= material_raw - material_raw2;
+
+        arrNotes[objIndex][scope] = Number(value);
+        const ppts = (this.formula.ppt / this.formula.concentrate) * material_raw2;
+        arrNotes[objIndex].ppt = ppts;
+        arrNotes[objIndex].alcohol = 100 - Number(value);
+        arrNotes[objIndex].material_raw = material_raw2;
+        return arrNotes;
+      }
+    },
+    removeIngredient(ingredient) {
+      console.log(ingredient);
+      if (ingredient.ingredientName !== "Alchool") {
+        let objIndex = this.ingredientsBackup.findIndex((obj) => obj.name == ingredient.ingredientName);
+        console.log(this.ingredientsBackup[objIndex]);
+        this.ingredients.push(this.ingredientsBackup[objIndex]);
+      } else {
+        const alchool = {
+          name: "Alchool",
+          casNumber: "91-64-5",
+          pyramidLevel: "alch",
+          odorDescription: "Acxhool for perfume",
+          type: "syntetic",
+          odorImpact: 0,
+          odorLife: 0,
+          dilutions: [
+            {
+              quantity: 100,
+            },
+          ],
+          olfactiveFamilies: [],
+        };
+        this.ingredients.push(alchool);
+      }
+      this.ingredientSelected = null;
+
+      switch (ingredient.pyramidLevel) {
+        case "base":
+          this.baseNotes = this.baseNotes.filter((item) => item.ingredientName != ingredient.ingredientName);
+          this.formula.basenote.amount -= ingredient.amount;
+          this.formula.total -= ingredient.amount;
+          this.formula.concentrate -= ingredient.material_raw;
+          this.updatePPTS();
+          break;
+        case "heart":
+          this.heartNotes = this.heartNotes.filter((item) => item.ingredientName != ingredient.ingredientName);
+          this.formula.heartnote.amount -= ingredient.amount;
+          this.formula.total -= ingredient.amount;
+          this.formula.concentrate -= ingredient.material_raw;
+          this.updatePPTS();
+          break;
+        case "top":
+          this.topNotes = this.topNotes.filter((item) => item.ingredientName != ingredient.ingredientName);
+          this.formula.topnote.amount -= ingredient.amount;
+          this.formula.total -= ingredient.amount;
+          this.formula.concentrate -= ingredient.material_raw;
+          this.updatePPTS();
+          break;
+        case "alch":
+          this.Alchool = this.Alchool.filter((item) => item.ingredientName != ingredient.ingredientName);
+          this.formula.total -= ingredient.amount;
+          this.formula.alch.amount = 0;
+          this.updatePPTS();
+          break;
+
+        default:
+          break;
+      }
+    },
+
+    updateIngredient(event, ingredient, scope) {
+      console.log(event.target.value);
+      console.log(ingredient);
+      console.log(scope);
+      console.log(this.formula.status);
+      if (this.formula.status == "done" && scope == "dilutionOfIngredient") {
+        // const alcool = (100 - Number(event.target.value))
+        // console.log(alcool);
+
+        console.log(this.formulaDone.currentAmountOfConcentrate);
+
+        switch (ingredient.pyramidLevel) {
+          case "base":
+            let ingBase = this.baseNotes.findIndex((obj) => obj.ingredientName == ingredient.ingredientName);
+            const mtrb = (ingredient.amount * ingredient.dilutionOfIngredient) / 100;
+            this.baseNotes[ingBase]["materialDoneRaw"] = mtrb;
+            this.baseNotes[ingBase]["prodDilutionOfIngredient"] = Number(event.target.value);
+
+            break;
+          case "heart":
+            let ingHeart = this.heartNotes.findIndex((obj) => obj.ingredientName == ingredient.ingredientName);
+            const mtrh = (ingredient.amount * ingredient.dilutionOfIngredient) / 100;
+            this.heartNotes[ingHeart]["materialDoneRaw"] = mtrh;
+            this.heartNotes[ingHeart]["prodDilutionOfIngredient"] = Number(event.target.value);
+
+            break;
+          case "top":
+            let ingTop = this.topNotes.findIndex((obj) => obj.ingredientName == ingredient.ingredientName);
+            const mtrt = (ingredient.amount * ingredient.dilutionOfIngredient) / 100;
+            this.topNotes[ingTop]["materialDoneRaw"] = mtrt;
+            this.topNotes[ingTop]["prodDilutionOfIngredient"] = Number(event.target.value);
+
+            break;
+
+          default:
+            break;
+        }
+
+        this.logicStatusChange();
+        this.updateFormulaDone(100, false);
+        this.calculateAlchoolToUse();
+
+        return;
+      }
+
+      switch (ingredient.pyramidLevel) {
+        case "base":
+          this.baseNotes = this.updateUtils(event.target.value, ingredient, scope, this.baseNotes);
+          this.updatePPTS();
+          console.log(this.baseNotes);
+          break;
+        case "heart":
+          this.heartNotes = this.updateUtils(event.target.value, ingredient, scope, this.heartNotes);
+          this.updatePPTS();
+          break;
+        case "top":
+          this.topNotes = this.updateUtils(event.target.value, ingredient, scope, this.topNotes);
+          this.updatePPTS();
+          break;
+
+        case "alch":
+          this.Alchool = this.updateUtils(event.target.value, ingredient, scope, this.Alchool);
+          this.updatePPTS();
+          break;
+
+        default:
+          break;
+      }
+    },
+    statusChange(event) {
+      console.log(event.target.value);
+      console.log(this.formulaDone.currentAmountOfConcentrate);
+
+      this.logicStatusChange();
+      this.updateFormulaDone(100, true);
+
+      console.log(this.formulaDone.scaleFactor);
+      console.log(this.formulaDone.desiredAmountAlchool);
+      console.log(this.formulaDone.desiredAmountConcentrate);
+      this.calculateAlchoolToUse();
+    },
+    calculateAlchoolToUse() {
+      const baseAmount = this.baseNotes.reduce((n, { amountToUse }) => n + amountToUse, 0);
+      const heartAmount = this.heartNotes.reduce((n, { amountToUse }) => n + amountToUse, 0);
+      const topAmount = this.topNotes.reduce((n, { amountToUse }) => n + amountToUse, 0);
+
+      this.formula.basenote.amount = baseAmount;
+      this.formula.heartnote.amount = heartAmount;
+      this.formula.topnote.amount = topAmount;
+
+      // console.log(baseAmount);
+      // console.log(heartAmount);
+      // console.log(topAmount);
+
+      const total_amount = baseAmount + heartAmount + topAmount;
+      // console.log(total_amount);
+      this.formulaDone.alchoolAdd = this.formulaDone.amountToMake - total_amount;
+      // console.log(total_amount);
+      this.formulaDone.totalAmount = total_amount;
+      console.log("amount alchol to use" + (this.formulaDone.amountToMake - total_amount));
+    },
+    logicStatusChange() {
+      const baseAmount = this.baseNotes.reduce((n, { materialDoneRaw }) => n + materialDoneRaw, 0);
+      const heartAmount = this.heartNotes.reduce((n, { materialDoneRaw }) => n + materialDoneRaw, 0);
+      const topAmount = this.topNotes.reduce((n, { materialDoneRaw }) => n + materialDoneRaw, 0);
+
+      console.log(baseAmount + heartAmount + topAmount);
+
+      this.formulaDone.currentAmountOfConcentrate = baseAmount + heartAmount + topAmount;
+      console.log(this.formulaDone.currentAmountOfConcentrate);
+
+      this.formulaDone.desiredAmountConcentrate = (this.formulaDone.amountToMake * this.formulaDone.desiredProcentage) / 100;
+      this.formulaDone.desiredAmountAlchool = this.formulaDone.amountToMake - this.formulaDone.desiredAmountConcentrate;
+      this.formulaDone.scaleFactor = this.formulaDone.desiredAmountConcentrate / this.formulaDone.currentAmountOfConcentrate;
+      console.log();
+    },
+
+    updateFormulaDone(dilution, dil) {
+      this.baseNotes = this.baseNotes.map((note) => (true ? { ...note, new_amount: this.formulaDone.scaleFactor * note.materialDoneRaw } : note));
+      this.heartNotes = this.heartNotes.map((note) => (true ? { ...note, new_amount: this.formulaDone.scaleFactor * note.materialDoneRaw } : note));
+      this.topNotes = this.topNotes.map((note) => (true ? { ...note, new_amount: this.formulaDone.scaleFactor * note.materialDoneRaw } : note));
+
+      if (dil) {
+        this.baseNotes = this.baseNotes.map((note) => (true ? { ...note, prodDilutionOfIngredient: dilution } : note));
+        this.heartNotes = this.heartNotes.map((note) => (true ? { ...note, prodDilutionOfIngredient: dilution } : note));
+        this.topNotes = this.topNotes.map((note) => (true ? { ...note, prodDilutionOfIngredient: dilution } : note));
+      }
+
+      this.baseNotes = this.baseNotes.map((note) => (true ? { ...note, amountToUse: note.new_amount / (note.prodDilutionOfIngredient / 100) } : note));
+      this.heartNotes = this.heartNotes.map((note) => (true ? { ...note, amountToUse: note.new_amount / (note.prodDilutionOfIngredient / 100) } : note));
+      this.topNotes = this.topNotes.map((note) => (true ? { ...note, amountToUse: note.new_amount / (note.prodDilutionOfIngredient / 100) } : note));
+    },
+
+    changeAmountToMake() {
+      console.log(this.formulaDone.amountToMake);
+      this.logicStatusChange();
+      this.updateFormulaDone(100, false);
+      this.calculateAlchoolToUse();
+    },
+    changeDesiredProcentage() {
+      console.log(this.formulaDone.desiredProcentage);
+
+      this.logicStatusChange();
+      this.updateFormulaDone(100, false);
+      this.calculateAlchoolToUse();
+    },
+
+    checkIfra(abs, ifra) {
+      if (ifra) {
+        return abs > Number(ifra);
+      }
+      return false;
+    },
+  },
+};
+</script>
+
+<style scoped>
+:deep(.multiselect__input, .multiselect__single) {
+  min-height: 38px !important;
+  position: relative !important;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+:deep(.multiselect__single) {
+  min-height: 38px !important;
+  line-height: 40px;
+  /* position: relative !important;
+ 
+  vertical-align: middle; */
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr.shaded td {
+  background-color: #4ca894 !important;
+  color: black;
+  font-weight: bold;
+}
+
+tr.heart td {
+  background-color: #eef111 !important;
+  color: black;
+  font-weight: bold;
+}
+
+tr.top td {
+  background-color: #f15811 !important;
+  color: black;
+  font-weight: bold;
+}
+
+tr.alch td {
+  background-color: #118cf1 !important;
+  color: black;
+  font-weight: bold;
+}
+</style>

@@ -1,10 +1,13 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light vh-10">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">Perfumir</a>
       <ul class="navbar-nav ms-xl-auto">
         <li class="nav-item">
-          <router-link class="nav-link active" to="/">Home</router-link>
+          <router-link class="nav-link active" to="/ingredients">Ingredientes</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link active" to="/projects">Projects</router-link>
         </li>
       </ul>
       <button

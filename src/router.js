@@ -1,26 +1,57 @@
-import Altas from "./components/Altas.vue";
-import Home from "./components/Home.vue";
+import LoggedInLayout from "./LoggedInLayout.vue";
+import CreateIngredient from "./components/IngredientsManagement/CreateIngredient.vue";
+import Ingredients from "./components/IngredientsManagement/Ingredients.vue";
 import Login from "./components/Login.vue";
 import Register from "./components/Register.vue";
+import Formula from "./components/projects/Formula.vue";
+import FormulaView from "./components/projects/FormulaView.vue";
+import Project from "./components/projects/Project.vue";
 
 import { createRouter, createWebHistory } from "vue-router";
 const routes = [
+  { path: "/login", component: Login, meta: { title: "Login" } },
+  { path: "/register", component: Register, meta: { title: "Register" } },
+
   {
     path: "/",
-    component: Home,
+    component: LoggedInLayout,
+    redirect: "/ingredients",
     meta: {
       requiresAuth: true, // Add meta field to indicate protected route
     },
+    children: [
+      {
+        path: "/ingredients",
+        component: Ingredients,
+        meta: { title: "Ingredients" },
+      },
+      {
+        path: "/ingredients/actions/:id?",
+        component: CreateIngredient,
+        meta: { title: "Create Ingredient" },
+      },
+      {
+        path: "/projects/:id?",
+        component: Project,
+        meta: { title: "Projects" },
+      },
+      {
+        path: "/formula/:id?",
+        component: Formula,
+        meta: { title: "Formula" },
+      },
+      {
+        path: "/formula/copy/:fmanagementId/:formulaId",
+        component: Formula,
+        meta: { title: "Copy Formula" },
+      },
+      {
+        path: "/formula/:project_id/formulaview/:formula_id",
+        component: FormulaView,
+        meta: { title: "Formula versions" },
+      },
+    ],
   },
-  {
-    path: "/altas",
-    component: Altas,
-    meta: {
-      requiresAuth: true, // Add meta field to indicate protected route
-    },
-  },
-  { path: "/login", component: Login },
-  { path: "/register", component: Register },
 ];
 
 const router = createRouter({
@@ -28,7 +59,8 @@ const router = createRouter({
   routes,
 });
 
-router.beforeEach(async (to, from,next) => {
+router.beforeEach(async (to, from, next) => {
+  document.title = to.meta.title;
   if (to.meta.requiresAuth) {
     const token = localStorage.getItem("token");
     if (token) {
