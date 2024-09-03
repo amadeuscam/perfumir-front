@@ -1,6 +1,6 @@
 <template>
-  <div class="d-flex justify-content-center align-items-center" style="height: 750px;">
-    <form class="m-auto" @submit.prevent="handleSubmit">
+  <div class="d-flex justify-content-center align-items-center flex-column login_background" style="height: 100vh">
+    <form class="m-auto form-s" @submit.prevent="handleSubmit">
       <h1 class="h3 mb-3 fw-normal">Registrar</h1>
 
       <div class="mb-3">
@@ -42,6 +42,7 @@
         Registrar
       </button>
     </form>
+    <router-link to="/login" class="btn btn-dark btn-large my-3">Ya estas registrado?</router-link>
   </div>
 </template>
 
@@ -76,5 +77,22 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.login_background  {
+  background-image: url("https://images.unsplash.com/photo-1543157145-f78c636d023d?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form-s {
+  background-color: #ffffff73;
+  border-radius: 5%;
+  padding: 20px 30px;
+  
+}
+.form-s h1 {
+  
+    font-size: 2.4em;
+    text-align: center;
+  
+}
 </style>

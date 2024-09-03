@@ -1,9 +1,9 @@
 <template>
   <div class="">
     <!-- <button class="btn btn-primary">Alta</button> -->
-    <router-link to="altas" class="btn btn-dark btn-large my-3"
+    <!-- <router-link to="altas" class="btn btn-dark btn-large my-3"
       >Alta Clientes</router-link
-    >
+    > -->
 
     <div class="input-group mb-3">
       <span class="input-group-text" id="basic-addon1">@</span>
