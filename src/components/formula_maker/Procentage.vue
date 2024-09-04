@@ -99,23 +99,23 @@ const getIngredients = async () => {
       storage.error = error.response.data.message;
     });
 
-  const alchool = {
-    name: "Alchool",
-    casNumber: "91-64-5",
-    pyramidLevel: "alch",
-    odorDescription: "Acxhool for perfume",
-    type: "syntetic",
-    odorImpact: 0,
-    odorLife: 0,
-    dilutions: [
-      {
-        quantity: 100,
-      },
-    ],
-    olfactiveFamilies: [],
-  };
+  // const alchool = {
+  //   name: "Alchool",
+  //   casNumber: "91-64-5",
+  //   pyramidLevel: "alch",
+  //   odorDescription: "Acxhool for perfume",
+  //   type: "syntetic",
+  //   odorImpact: 0,
+  //   odorLife: 0,
+  //   dilutions: [
+  //     {
+  //       quantity: 100,
+  //     },
+  //   ],
+  //   olfactiveFamilies: [],
+  // };
 
-  storage.ingredients.push(alchool);
+  // storage.ingredients.push(alchool);
 };
 
 const addIngredient = () => {

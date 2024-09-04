@@ -7,9 +7,15 @@ const customAxios = axios.create({
 customAxios.interceptors.request.use(
   async (config) => {
     if (config.headers) {
-      if (config.url !== "api/auth/signin") {
+      const endpoints = ["api/auth/signin", "api/auth/signup"];
+
+      console.log(config.url);
+
+      if (!endpoints.includes(config.url)) {
+        console.log("no deberia estar aqui");
+
         const token = localStorage.getItem("token");
-        const refreshToken = localStorage.getItem("refreshToken");
+        // const refreshToken = localStorage.getItem("refreshToken");
         config.headers["Authorization"] = `Bearer ${token}`;
       }
 

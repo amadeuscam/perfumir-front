@@ -51,11 +51,12 @@
 </template>
 <script setup>
 import { defineProps, reactive, watch } from "vue";
+import { useRouter } from "vue-router";
 import { useToast } from "vue-toast-notification";
 import customAxios from "../../axios";
 import WrapperNotes from "../formula_body/WrapperNotes.vue";
 const toast = useToast();
-
+const router = useRouter();
 const props = defineProps({
   ingredient: Array,
   formula: Object,
@@ -559,6 +560,7 @@ const submitData = async (payload) => {
         toast.success("Formula added", {
           duration: 2000,
         });
+        router.go(-1)
       }
     })
     .catch((error) => {
@@ -581,6 +583,7 @@ const submitData = async (payload) => {
         toast.success("Formula added", {
           duration: 2000,
         });
+        router.go(-1)
       })
       .catch((error) => {
         console.error(error);

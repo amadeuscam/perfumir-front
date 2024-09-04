@@ -1,27 +1,24 @@
 <template>
-  <router-link to="/ingredients/actions" class="btn btn-dark btn-large my-3">Alta Ingrediente</router-link>
+  <router-link to="/ingredients/actions" class="btn btn-dark btn-large my-3">New Ingredient</router-link>
   <Eror :error="error" />
 
   <div class="row">
     <div class="col-12 col-md-2">
       <div class="row">
         <div class="col-12 col-md-12">
-
           <div class="col-12 col-md-12">
             <input type="search" v-model="searchField" class="form-control" placeholder="Search ingredients..." />
           </div>
-          <div class="col-12 col-md-12 mt-5">
-            <button class="btn btn-md btn-dark mb-3" @click.prevent="downloadIngredients()">Dowload
-              Ingredientes</button>
-          </div>
-          <div class="col-12 col-md-12 mt-3 ">
-            <h4 style="margin-right: 15px;text-align: center;">Dilutions</h4>
+          <!-- <div class="col-12 col-md-12 mt-5">
+            <button class="btn btn-md btn-dark mb-3" @click.prevent="downloadIngredients()">Dowload Ingredientes</button>
+          </div> -->
+          <div class="col-12 col-md-12 mt-3">
+            <h4 style="margin-right: 15px; text-align: center">Dilutions</h4>
             <table class="table">
               <thead>
                 <tr>
                   <th scope="col">Dilution</th>
                   <th scope="col">Quanities</th>
-
                 </tr>
               </thead>
               <tbody>
@@ -29,7 +26,6 @@
                   <td scope="row">{{ stat.quantity }}</td>
                   <td>{{ stat.count }}</td>
                 </tr>
-
               </tbody>
             </table>
             <!--
@@ -39,17 +35,13 @@
                 stat.count }}</span>
             </h6> -->
           </div>
-          <div class="col-12 col-md-12 mt-3 ">
+          <div class="col-12 col-md-12 mt-3">
             <h4 class="text-center m-4">Piramid Level</h4>
             <div class="row">
-              <div class="col mb-3"><span class="badge rounded-pill bg-primary fs-6" style="cursor: pointer;"
-                  @click="sortPiramid('all')">All</span></div>
-              <div class="col mb-3"><span class="badge rounded-pill bg-warning fs-6" style="cursor: pointer;"
-                  @click="sortPiramid('base')">Base</span></div>
-              <div class="col mb-3"><span class="badge rounded-pill bg-success fs-6" style="cursor: pointer;"
-                  @click="sortPiramid('heart')">Heart</span></div>
-              <div class="col mb-3"><span class="badge rounded-pill bg-dark fs-6" style="cursor: pointer;" @click="sortPiramid('top')">Top</span>
-              </div>
+              <div class="col mb-3"><span class="badge rounded-pill bg-primary fs-6" style="cursor: pointer" @click="sortPiramid('all')">All</span></div>
+              <div class="col mb-3"><span class="badge rounded-pill bg-warning fs-6" style="cursor: pointer" @click="sortPiramid('base')">Base</span></div>
+              <div class="col mb-3"><span class="badge rounded-pill bg-success fs-6" style="cursor: pointer" @click="sortPiramid('heart')">Heart</span></div>
+              <div class="col mb-3"><span class="badge rounded-pill bg-dark fs-6" style="cursor: pointer" @click="sortPiramid('top')">Top</span></div>
             </div>
           </div>
         </div>
@@ -61,13 +53,12 @@
           <div class="card h-100 crd-vh">
             <div class="card-body">
               <h5 class="card-title d-flex justify-content-between align-items-center">
-                <router-link :to="'/ingredients/actions/' + ingredient.id" class="text-dark"><span
-                    class="text-decoration-underline">{{ ingredient.name }}</span></router-link>
+                <router-link :to="'/ingredients/actions/' + ingredient.id" class="text-dark"
+                  ><span class="text-decoration-underline">{{ ingredient.name }}</span></router-link
+                >
                 <span title="Ifra Limits" class="text-black-50" v-if="ingredient.ifra">{{ ingredient.ifra }}</span>
                 <span title="Ifra Limits" class="text-black-50" v-if="!ingredient.ifra">No Limit</span>
                 <span title="Cas number" class="text-black-50">{{ ingredient.casNumber }}</span>
-
-
               </h5>
               <div class="card-text">
                 <div class="row">
@@ -86,8 +77,7 @@
 
                     <h4 class="mt-3">Olfactive Families</h4>
                     <div class="row g-1 row-cols-4 row-cols-md-4">
-                      <div class="col" v-for="olfactiveFamiliy in ingredient.olfactiveFamilies"
-                        :key="olfactiveFamiliy.id">
+                      <div class="col" v-for="olfactiveFamiliy in ingredient.olfactiveFamilies" :key="olfactiveFamiliy.id">
                         <span class="badge rounded-pill bg-success">{{ olfactiveFamiliy.name }}</span>
                       </div>
                     </div>
@@ -180,10 +170,9 @@ export default {
       if (piramid == "all") {
         this.ingredients = this.bkpIngredients;
       } else {
-        this.ingredients = this.bkpIngredients.filter(ing => ing.pyramidLevel == piramid)
+        this.ingredients = this.bkpIngredients.filter((ing) => ing.pyramidLevel == piramid);
       }
-
-    }
+    },
   },
 };
 </script>

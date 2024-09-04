@@ -1,10 +1,10 @@
 <template>
   <div class="container-fluid mt-5">
     <h1 class="mb-3 text-center">
-      {{ status == "update" ? "Update   " + name : "Add ingrediente" }}
+      {{ status == "update" ? "Update   " + name : "Add ingredient" }}
     </h1>
 
-    <button class="btn btn-md btn-dark mb-3" @click.prevent="$router.go(-1)">Volver</button>
+    <button class="btn btn-md btn-dark mb-3" @click.prevent="$router.go(-1)">Go back</button>
 
     <Eror :error="error" />
     <div class="row">
@@ -75,13 +75,12 @@
                   <label for="ifra">Ifra Limit</label>
                 </div>
               </div>
-
-
             </div>
           </div>
           <div class="col-12 col-md-4">
             <div class="row">
-              <div class="col-12 col-md-6">
+              <div class="col-12 col-md-6" style="position: relative">
+                <small class="mt-1 mt-md-0 text-secondary" style="position: absolute; top: -22px; z-index: 12;font-size: .8em;">To add more than one press <u>ctrl</u> </small>
                 <div class="form-floating mb-3">
                   <select class="form-select" style="height: 30vh; overflow-y: auto" id="dilutions" v-model="dilutions" multiple aria-label="Floating label select example">
                     <option :value="dilution" v-for="dilution in preloadData.dilutions" :key="dilution.id">
@@ -92,7 +91,8 @@
                 </div>
               </div>
 
-              <div class="col-12 col-md-6">
+              <div class="col-12 col-md-6" style="position: relative">
+                <small class="mt-1 mt-md-0 text-secondary" style="position: absolute; top: -22px; z-index: 12;font-size: .8em;">To add more than one press <u>ctrl</u></small>
                 <div class="form-floating mb-3">
                   <select class="form-select" id="olfactoryFamily" v-model="olfactiveFamilies" style="height: 30vh; overflow-y: auto" multiple aria-label="Floating label select example">
                     <option :value="olfactiveFamily" v-for="(olfactiveFamily, index) in preloadData.olfactiveFamilies" :key="index">
@@ -108,7 +108,7 @@
 
         <div class="d-flex justify-content-evenly align-items-around gap-3">
           <button class="w-100 btn btn-lg btn-outline-success" type="submit">
-            {{ status == "update" ? "Actualizar" : "Añadir" }}
+            {{ status == "update" ? "Update Ingredient" : "Add Ingredient" }}
           </button>
         </div>
       </form>
@@ -282,7 +282,7 @@ export default {
       this.olfactoryFamilyAdd = "";
     },
     addDilution() {
-      if (this.dilutionAdd == null ||  isNaN(parseInt(this.dilutionAdd)))  {
+      if (this.dilutionAdd == null || isNaN(parseInt(this.dilutionAdd))) {
         return;
       }
 
