@@ -1,3 +1,4 @@
+import { createRouter, createWebHistory } from "vue-router";
 import LoggedInLayout from "./LoggedInLayout.vue";
 import CreateIngredient from "./components/IngredientsManagement/CreateIngredient.vue";
 import Ingredients from "./components/IngredientsManagement/Ingredients.vue";
@@ -6,8 +7,7 @@ import Register from "./components/Register.vue";
 import Formula from "./components/projects/Formula.vue";
 import FormulaView from "./components/projects/FormulaView.vue";
 import Project from "./components/projects/Project.vue";
-
-import { createRouter, createWebHistory } from "vue-router";
+import Recognition from "./views/Recognition.vue";
 const routes = [
   { path: "/login", component: Login, meta: { title: "Login" } },
   { path: "/register", component: Register, meta: { title: "Register" } },
@@ -24,6 +24,10 @@ const routes = [
         path: "/ingredients",
         component: Ingredients,
         meta: { title: "Ingredients" },
+      },{
+        path: "/recognition",
+        component: Recognition,
+        meta: { title: "Recognition" },
       },
       {
         path: "/ingredients/actions/:id?",

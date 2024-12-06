@@ -55,8 +55,10 @@ import { useRouter } from "vue-router";
 import { useToast } from "vue-toast-notification";
 import customAxios from "../../axios";
 import WrapperNotes from "../formula_body/WrapperNotes.vue";
+
 const toast = useToast();
 const router = useRouter();
+
 const props = defineProps({
   ingredient: Array,
   formula: Object,
