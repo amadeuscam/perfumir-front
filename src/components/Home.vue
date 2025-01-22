@@ -7,14 +7,8 @@
 
     <div class="input-group mb-3">
       <span class="input-group-text" id="basic-addon1">@</span>
-      <input
-        type="text"
-        class="form-control"
-        placeholder="Buscar por nombre"
-        aria-label="Username"
-        v-model="search"
-        aria-describedby="basic-addon1"
-      />
+      <input type="text" class="form-control" placeholder="Buscar por nombre" aria-label="Username" v-model="search"
+        aria-describedby="basic-addon1" />
     </div>
 
     <div class="" v-if="cunstomers">
@@ -37,16 +31,10 @@
             <td>{{ customer.secondLastName }}</td>
             <td>{{ customer.address }}</td>
             <td class="d-flex justify-content-evenly align-items-around">
-              <button
-                class="btn btn-primary"
-                @click="handleUpdate(customer.dni)"
-              >
+              <button class="btn btn-primary" @click="handleUpdate(customer.dni)">
                 Edit
               </button>
-              <button
-                class="btn btn-danger mr-2"
-                @click="handleDelete(customer.dni)"
-              >
+              <button class="btn btn-danger mr-2" @click="handleDelete(customer.dni)">
                 Borrar
               </button>
             </td>
@@ -109,5 +97,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

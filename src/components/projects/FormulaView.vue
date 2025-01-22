@@ -3,35 +3,31 @@
     <div class="col-12 col-md-12">
       <div class="row">
         <div class="col-12 col-md-4">
-          <button class="btn btn-md btn-dark mb-3" @click.prevent="$router.go(-1)"><v-icon name="ri-arrow-go-back-line" /> Go Back</button>
+          <button class="btn btn-md btn-dark mb-3" @click.prevent="$router.go(-1)"><v-icon
+              name="ri-arrow-go-back-line" /> Go Back</button>
         </div>
         <div class="col-12 col-md-4 mb-2 text-center">
           <h2>{{ fvData.formulaName }}</h2>
-          <button class="btn btn-md btn-danger mb-3" @click="deleteFormulaManagement(fvData.fmanagement_id)"><v-icon name="ri-delete-bin-3-line" /> Delete formula</button>
+          <button class="btn btn-md btn-danger mb-3" @click="deleteFormulaManagement(fvData.fmanagement_id)"><v-icon
+              name="ri-delete-bin-3-line" /> Delete formula</button>
         </div>
         <div class="col-12 col-md-4" style="text-align: right">
-          <router-link :to="'/formula/' + fvData.fmanagement_id" class="btn btn-md btn-dark mb-3" v-if="fvData.formulas.length > 0"
-            ><v-icon style="margin-right: 5px" name="ri-add-circle-line" /><span>Add Another Version</span></router-link
-          >
+          <router-link :to="'/formula/' + fvData.fmanagement_id" class="btn btn-md btn-dark mb-3"
+            v-if="fvData.formulas.length > 0"><v-icon style="margin-right: 5px" name="ri-add-circle-line" /><span>Add
+              Another Version</span></router-link>
         </div>
       </div>
     </div>
     <div class="col-12 col-md-12">
-      <SubFormula
-        :formula="formula"
-        v-for="formula in fvData.formulas"
-        :fmanagementId="fvData.fmanagement_id"
-        :key="formula.id"
-        v-if="fvData.formulas.length > 0"
-        @deleteFormula="removeFormula"
-        @addComments="addComment"
-        @removeComments="deleteComments"
-      />
+
+      <SubFormula :formula="formula" v-for="formula in fvData.formulas" :fmanagementId="fvData.fmanagement_id"
+        :key="formula.id" v-if="fvData.formulas.length > 0" @deleteFormula="removeFormula" @addComments="addComment"
+        @removeComments="deleteComments" />
 
       <div class="notFormulaContainer" v-if="fvData.formulas.length == 0">
         <router-link :to="'/formula/' + fvData.fmanagement_id" class="btn btn-md btn-dark mb-3">
-          <v-icon style="margin-right: 5px" name="ri-add-circle-line" /><span>Add Version of Formula</span></router-link
-        >
+          <v-icon style="margin-right: 5px" name="ri-add-circle-line" /><span>Add Version of
+            Formula</span></router-link>
       </div>
     </div>
   </div>

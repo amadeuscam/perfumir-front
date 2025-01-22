@@ -1,44 +1,89 @@
 <template>
-    <div class="col-12 col-md-12 mt-5">
+    <div class="col-12 col-md-12 mt-5" style="min-height: 50vh;">
         <div class="row">
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-md-6" style="position: relative;">
+                <h2>Ingredients <span class="text-danger">Not</span> Guessed ({{ ingredientsToGuess.length }})</h2>
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <div class="form-floating mb-3">
+                            <VueMultiselect v-model="form.ingredientSelected" :options="form.ingredients"
+                                :close-on-select="true" :clear-on-select="true" maxHeight="200"
+                                @select="ingredientChange($event)" placeholder="Select Ingredient" label="name"
+                                track-by="name" />
+                        </div>
+                    </div>
 
+                    <div class="col-12 col-md-4 ">
+                        <button class="btn btn-lg btn-dark w-100" @click.prevent="addIngredient()">
+                            <div class="">
+                                <span>Add</span>
 
-                <div class="form-floating mb-3">
-                    <VueMultiselect v-model="form.ingredientSelected" :options="form.ingredients"
-                        :close-on-select="true" :clear-on-select="true" maxHeight="200"
-                        @select="ingredientChange($event)" placeholder="Select Ingredient" label="name"
-                        track-by="name" />
+                                <v-icon name="ri-add-circle-fill" scale="1.3" fill="grey" animation="flash" hover
+                                    style="margin-left: 10px; cursor: pointer" title="Add Ingredient" />
+                            </div>
+                        </button>
+                    </div>
                 </div>
 
-
-
+                <draggable v-model="ingredientsToGuess" :animation="300" tag="ul" class="list-group" group="meals"
+                    item-key="1">
+                    <template #item="{ element: meal }">
+                        <li class="list-group-item list-group-item-dark">{{ meal }}</li>
+                    </template>
+                </draggable>
             </div>
-
-            <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
-                <button class="btn btn-lg btn-dark w-100" @click.prevent="addIngredient()">
-                    <div class="">
-                        <span>Add</span>
-
-                        <v-icon name="ri-add-circle-fill" scale="1.3" fill="grey" animation="flash" hover
-                            style="margin-left: 10px; cursor: pointer" title="Add Ingredient" />
+            <div class="col-12 col-md-6" style="overflow: visible">
+                <ConfettiExplosion :particleCount="200" :force="0.5" v-if="visible" />
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h2>Ingredients Guessed ({{ ingredientsGuessed.length }})</h2>
                     </div>
-                </button>
+                    <div class="col-12 col-md-6 text-end">
+                        <button class="btn  btn-dark w-100" @click.prevent="saveReg()">
+                            <div class="">
+                                <span>Save</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <draggable v-model="ingredientsGuessed" tag="ul" :animation="300" class="list-group" group="meals"
+                    @change="checkMove('guess')" item-key="2">
+                    <template #item="{ element: meal }">
+                        <li class="list-group-item list-group-item-success">
+                            {{ meal }}
+                        </li>
+                    </template>
+                </draggable>
             </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <h4>History</h4>
+        <div class="row">
+
         </div>
     </div>
 </template>
 
 <script setup>
-import { onMounted, reactive } from "vue";
+import draggable from "vuedraggable";
+import { onMounted, reactive, ref, nextTick } from "vue";
 import VueMultiselect from "vue-multiselect";
 import customAxios from "../axios";
+import ConfettiExplosion from "vue-confetti-explosion";
 
 onMounted(() => {
     getIngredients();
 });
 
 const emit = defineEmits(["ingredientSelectedHAndler"]);
+
+const ingredientsToGuess = ref([]);
+
+const ingredientsGuessed = ref([]);
+const css_select_pr = ref("realtive");
+const visible = ref(false);
 
 const form = reactive({
     ingredients: [],
@@ -51,7 +96,15 @@ const form = reactive({
     quantity: null,
     total_ppts: null,
     ppt_per: null,
+
 });
+
+const checkMove = async (e) => {
+
+    visible.value = false;
+    await nextTick();
+    visible.value = true;
+}
 
 const ingredientChange = (event) => {
     form.dilutions = form.ingredientSelected.dilutions;
@@ -73,48 +126,55 @@ const getIngredients = async () => {
             console.error(error.response.data.message);
         });
 
-    // const alchool = {
-    //   name: "Alchool",
-    //   casNumber: "91-64-5",
-    //   pyramidLevel: "alch",
-    //   odorDescription: "Acxhool for perfume",
-    //   type: "syntetic",
-    //   odorImpact: 0,
-    //   odorLife: 0,
-    //   dilutions: [
-    //     {
-    //       quantity: 100,
-    //     },
-    //   ],
-    //   olfactiveFamilies: [],
-    // };
 
-    // form.ingredients.push(alchool);
 };
 
 const addIngredient = () => {
-    // console.log(form.amount);
-    // console.log(form.ppt);
-    // console.log(form.total_ppts);
-    // console.log(form.ppt_per)
-    // console.log([form?.amount, form?.ppt, form?.total_ppts, form?.ppt_per]);
- 
+    console.log(form.ingredientSelected)
+
+    ingredientsToGuess.value.push(form.ingredientSelected['name'])
+    if (ingredientsToGuess.value.length > 2) {
+        css_select_pr.value = "absolute"
+    }
 };
+
+const saveReg = () => {
+    let saveList = []
+    for (let item of ingredientsToGuess.value) {
+        saveList.push({
+            recognized: false,
+            ingredientName: item
+        })
+    }
+
+    for (let item of ingredientsGuessed.value) {
+        saveList.push({
+            recognized: true,
+            ingredientName: item
+        })
+    }
+    console.log(ingredientsToGuess.value)
+    console.log(ingredientsGuessed.value)
+    console.log(saveList)
+    customAxios.post("/api/v1/recognitions", saveList)
+        .then((response) => {
+            console.log(response.data);
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+}
 </script>
 
 <style scoped>
-:deep(.multiselect__input, .multiselect__single) {
-    min-height: 38px !important;
-    position: relative !important;
-    line-height: 40px;
-    vertical-align: middle;
+li:hover {
+    cursor: pointer;
 }
 
-:deep(.multiselect__single) {
-    min-height: 38px !important;
-    line-height: 40px;
-    /* position: relative !important;
- 
-  vertical-align: middle; */
+:deep(.multiselect__content-wrapper) {
+    max-height: 140px !important;
+    z-index: 99;
+    position: v-bind(css_select_pr);
+    display: block;
 }
 </style>

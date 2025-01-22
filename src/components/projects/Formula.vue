@@ -1,6 +1,7 @@
 <template>
   <div class="container-fluid mt-5">
-    <button class="btn btn-md btn-dark mb-3" @click.prevent="$router.go(-1)"><v-icon name="ri-arrow-go-back-line" /> Go Back</button>
+    <button class="btn btn-md btn-dark mb-3"    @click.prevent="$router.go(-1)"><v-icon name="ri-arrow-go-back-line" /> Go
+      Back</button>
 
     <div class="row">
       <form class="col-12 col-md-8">
@@ -8,7 +9,8 @@
           Add Formula <span style="color: #848484"> {{ formula.name }}</span>
         </h2>
         <div class="form-floating mb-3">
-          <select class="form-select" id="dilutions" v-model="management.typeFormula" aria-label="Floating label select example">
+          <select class="form-select" id="dilutions" v-model="management.typeFormula"
+            aria-label="Floating label select example">
             <option value="weight">Weight</option>
             <option value="ppt">PPT</option>
             <option value="procentage">Procentage</option>
@@ -21,14 +23,16 @@
             <div class="row">
               <div class="col-12 col-md-6">
                 <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="name" placeholder="0.100" required v-model="management.amountToMake" @change.prevent="changeAmountToMake()" />
+                  <input type="text" class="form-control" id="name" placeholder="0.100" required
+                    v-model="management.amountToMake" @change.prevent="changeAmountToMake()" />
                   <label for="name">Amount To Make</label>
                 </div>
               </div>
 
               <div class="col-12 col-md-6">
                 <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="name" placeholder="0.100" required v-model="management.desiredProcentage" @change.prevent="changeDesiredProcentage()" />
+                  <input type="text" class="form-control" id="name" placeholder="0.100" required
+                    v-model="management.desiredProcentage" @change.prevent="changeDesiredProcentage()" />
                   <label for="name">Desired Procentage</label>
                 </div>
               </div>
@@ -40,24 +44,21 @@
           <div class="col-12 col-md-12" v-if="formula.status !== 'done'">
             <Weight @ingredientSelectedHAndler="handleSelectIngredient" v-if="management.typeFormula == 'weight'" />
             <Ppt @ingredientSelectedHAndler="handleSelectIngredient" v-if="management.typeFormula == 'ppt'" />
-            <Procentage @ingredientSelectedHAndler="handleSelectIngredient" v-if="management.typeFormula == 'procentage'" />
+            <Procentage @ingredientSelectedHAndler="handleSelectIngredient"
+              v-if="management.typeFormula == 'procentage'" />
           </div>
 
-          <Table
-            :ingredient="management.piramidIngredient"
-            @updateFormulaParent="formulaUpdate"
-            :save-formula="management.formulaSave"
-            :formula="formula"
-            :estado="management.stateProps"
-            :formula-production="formulaDone"
-          />
+          <Table :ingredient="management.piramidIngredient" @updateFormulaParent="formulaUpdate"
+            :save-formula="management.formulaSave" :formula="formula" :estado="management.stateProps"
+            :formula-production="formulaDone" />
         </div>
       </form>
       <div class="col-12 col-md-4">
         <div class="row">
           <div class="col-12 col-md-4">
             <div class="form-floating mb-3">
-              <select class="form-select" id="status" v-model="formula.status" @change="statusChange($event)" aria-label="Floating label select example">
+              <select class="form-select" id="status" v-model="formula.status" @change="statusChange($event)"
+                aria-label="Floating label select example">
                 <option value="in_progress">In Progress</option>
                 <option value="done">Done</option>
               </select>
@@ -67,15 +68,9 @@
 
           <div class="col-12 col-md-4">
             <div class="form-floating mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                placeholder="coumarin"
-                required
+              <input type="text" class="form-control" id="name" placeholder="coumarin" required
                 v-model="management.version"
-                :class="{ 'border border-warning': management.version && management.version.length == 0 }"
-              />
+                :class="{ 'border border-warning': management.version && management.version.length == 0 }" />
               <label for="name">Version</label>
             </div>
           </div>
@@ -89,7 +84,8 @@
           </div>
 
           <div class="col-12 col-md-12 text-center" v-if="formula.status !== 'done'">
-            <button class="btn btn-lg w-100 btn-success mb-3" @click.prevent="saveFormula()" :disabled="management.version && management.version.length == 0">
+            <button class="btn btn-lg w-100 btn-success mb-3" @click.prevent="saveFormula()"
+              :disabled="management.version && management.version.length == 0">
               <div class="d-flex justify-content-center align-items-center">
                 <v-icon name="ri-send-plane-2-line" scale="1.4" style="margin-right: 10px" />
                 <span> Submit Formula</span>
@@ -116,8 +112,7 @@
                   Final Concentrate: <br />
                   <span style="font-size: 2rem">
                     {{ formula.final_concentrate_perfume ? formula.final_concentrate_perfume.toFixed(2) : 0 }}
-                    %</span
-                  >
+                    %</span>
                 </h6>
               </div>
               <div class="col-6 col-md-6">
@@ -150,7 +145,8 @@
 
           <div class="col-12 col-md-12">
             <div class="form-floating mb-3">
-              <textarea class="form-control" id="comments" rows="50" cols="8" required v-model="management.comments" style="min-height: 200px" />
+              <textarea class="form-control" id="comments" rows="50" cols="8" required v-model="management.comments"
+                style="min-height: 200px" />
               <label for="comments">Comments</label>
             </div>
           </div>

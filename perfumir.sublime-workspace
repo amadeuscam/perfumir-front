@@ -1,0 +1,2315 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"for",
+				"formulaManagement"
+			],
+			[
+				"set",
+				"setVersion(String version) : void"
+			],
+			[
+				"get",
+				"get() : FormulaManagement"
+			],
+			[
+				"is",
+				"isPresent() : boolean"
+			],
+			[
+				"gert",
+				"getVersion() : String"
+			],
+			[
+				"fo",
+				"formulaManagement"
+			],
+			[
+				"proje",
+				"projectOptional"
+			],
+			[
+				"rou",
+				"router"
+			],
+			[
+				"c",
+				"click"
+			],
+			[
+				"fil",
+				"filteredList"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"pri",
+				"println() : void"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"se",
+				"self"
+			],
+			[
+				"subl",
+				"sublime"
+			],
+			[
+				"de",
+				"def"
+			],
+			[
+				"if",
+				"if"
+			],
+			[
+				"s",
+				"script"
+			],
+			[
+				"e",
+				"timeout"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/views/Recognition.vue",
+			"redo_stack":
+			[
+				[
+					979,
+					1,
+					"paste",
+					null,
+					"AQAAAEkLAAAAAAAASQsAAAAAAAAOAgAAPGxpIGNsYXNzPSJkcm9wZG93biI+CiAgIDxhIGhyZWY9IiMiIGNsYXNzPSJkcm9wZG93bi10b2dnbGUiIGRhdGEtdG9nZ2xlPSJkcm9wZG93biIgcm9sZT0iYnV0dG9uIiBhcmlhLWV4cGFuZGVkPSJmYWxzZSI+RHJvcGRvd24gPHNwYW4gY2xhc3M9ImNhcmV0Ij48L3NwYW4+PC9hPgogICAgPHVsIGNsYXNzPSJkcm9wZG93bi1tZW51IiByb2xlPSJtZW51Ij4KICAgICAgIDxsaT48YSBocmVmPSIjIj5BY3Rpb248L2E+PC9saT4KICAgICAgIDxsaT48YSBocmVmPSIjIj5Bbm90aGVyIGFjdGlvbjwvYT48L2xpPgogICAgICAgPGxpPjxhIGhyZWY9IiMiPlNvbWV0aGluZyBlbHNlIGhlcmU8L2E+PC9saT4KICAgICAgIDxsaSBjbGFzcz0iZGl2aWRlciI+PC9saT4KICAgICAgIDxsaT48YSBocmVmPSIjIj5TZXBhcmF0ZWQgbGluazwvYT48L2xpPgogICAgICAgPGxpIGNsYXNzPSJkaXZpZGVyIj48L2xpPgogICAgICAgPGxpPjxhIGhyZWY9IiMiPk9uZSBtb3JlIHNlcGFyYXRlZCBsaW5rPC9hPjwvbGk+CiAgICA8L3VsPgo8L2xpPg",
+					"AQAAAAAAAAABAAAAVw0AAAAAAABXDQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					960,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AwAAAEkLAAAAAAAAXQsAAAAAAAAAAAAAXgsAAAAAAABeCwAAAAAAABQAAAAgICAgICAgICAgICAgICAgICAgIF0LAAAAAAAAXQsAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAXgsAAAAAAABeCwAAAAAAAAAAAAAAAPC/"
+				]
+			],
+			"settings":
+			{
+				"buffer_size": 5731,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					208,
+					1,
+					"insert",
+					{
+						"characters": "m"
+					},
+					"AQAAAGkFAAAAAAAAagUAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAaQUAAAAAAABpBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					210,
+					1,
+					"left_delete",
+					null,
+					"AQAAAGkFAAAAAAAAaQUAAAAAAAABAAAAbQ",
+					"AQAAAAAAAAABAAAAagUAAAAAAABqBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					608,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Delete Line.sublime-macro"
+					},
+					"AQAAAIIJAAAAAAAAggkAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAggkAAAAAAACCCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					684,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAABEJAAAAAAAAEgkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAEQkAAAAAAAARCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					686,
+					1,
+					"paste",
+					null,
+					"AQAAABIJAAAAAAAAJgkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAEgkAAAAAAAASCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					700,
+					1,
+					"paste",
+					null,
+					"AgAAACIJAAAAAAAAKQkAAAAAAAAAAAAAKQkAAAAAAAApCQAAAAAAAAQAAABpbmZv",
+					"AQAAAAAAAAABAAAAIgkAAAAAAAAmCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					711,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAALEGAAAAAAAAsgYAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAsQYAAAAAAACxBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					713,
+					1,
+					"paste",
+					null,
+					"AQAAALIGAAAAAAAAyQYAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAsgYAAAAAAACyBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					720,
+					1,
+					"insert",
+					{
+						"characters": "dar"
+					},
+					"BAAAAMIGAAAAAAAAwwYAAAAAAAAAAAAAwwYAAAAAAADDBgAAAAAAAAcAAABzdWNjZXNzwwYAAAAAAADEBgAAAAAAAAAAAADEBgAAAAAAAMUGAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwgYAAAAAAADJBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					721,
+					1,
+					"insert_completion",
+					{
+						"completion": "list-group-item-dark",
+						"format": "text",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "list-group-item-dark"
+					},
+					"AgAAALIGAAAAAAAAsgYAAAAAAAATAAAAbGlzdC1ncm91cC1pdGVtLWRhcrIGAAAAAAAAxgYAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxQYAAAAAAADFBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					736,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAALkJAAAAAAAAugkAAAAAAAAAAAAAugkAAAAAAAC+CQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAuQkAAAAAAAC5CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					739,
+					1,
+					"insert",
+					{
+						"characters": ".col-12"
+					},
+					"BwAAAL4JAAAAAAAAvwkAAAAAAAAAAAAAvwkAAAAAAADACQAAAAAAAAAAAADACQAAAAAAAMEJAAAAAAAAAAAAAMEJAAAAAAAAwgkAAAAAAAAAAAAAwgkAAAAAAADDCQAAAAAAAAAAAADDCQAAAAAAAMQJAAAAAAAAAAAAAMQJAAAAAAAAxQkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvgkAAAAAAAC+CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					740,
+					1,
+					"emmet_expand_abbreviation",
+					{
+						"tab": true
+					},
+					"AgAAAL4JAAAAAAAAvgkAAAAAAAAHAAAALmNvbC0xMr4JAAAAAAAA2AkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxQkAAAAAAADFCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					744,
+					1,
+					"auto_indent_tag",
+					null,
+					"AQAAANIJAAAAAAAA4AkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0gkAAAAAAADSCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					747,
+					1,
+					"insert",
+					{
+						"characters": ".row"
+					},
+					"BAAAANsJAAAAAAAA3AkAAAAAAAAAAAAA3AkAAAAAAADdCQAAAAAAAAAAAADdCQAAAAAAAN4JAAAAAAAAAAAAAN4JAAAAAAAA3wkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA2wkAAAAAAADbCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					748,
+					1,
+					"emmet_expand_abbreviation",
+					{
+						"tab": true
+					},
+					"AgAAANsJAAAAAAAA2wkAAAAAAAAEAAAALnJvd9sJAAAAAAAA8gkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3wkAAAAAAADfCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					749,
+					1,
+					"auto_indent_tag",
+					null,
+					"AQAAAOwJAAAAAAAAAgoAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA7AkAAAAAAADsCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					758,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AwAAANIJAAAAAAAA0wkAAAAAAAAAAAAA0wkAAAAAAADXCQAAAAAAAAAAAADXCQAAAAAAANsJAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0gkAAAAAAADSCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					761,
+					1,
+					"insert",
+					{
+						"characters": "h4"
+					},
+					"AgAAANsJAAAAAAAA3AkAAAAAAAAAAAAA3AkAAAAAAADdCQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA2wkAAAAAAADbCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					762,
+					1,
+					"emmet_expand_abbreviation",
+					{
+						"tab": true
+					},
+					"AgAAANsJAAAAAAAA2wkAAAAAAAACAAAAaDTbCQAAAAAAAOQJAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3QkAAAAAAADdCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					763,
+					1,
+					"insert",
+					{
+						"characters": "History"
+					},
+					"BwAAAN8JAAAAAAAA4AkAAAAAAAAAAAAA4AkAAAAAAADhCQAAAAAAAAAAAADhCQAAAAAAAOIJAAAAAAAAAAAAAOIJAAAAAAAA4wkAAAAAAAAAAAAA4wkAAAAAAADkCQAAAAAAAAAAAADkCQAAAAAAAOUJAAAAAAAAAAAAAOUJAAAAAAAA5gkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3wkAAAAAAADfCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					776,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAABEIAAAAAAAAEggAAAAAAAAAAAAAEggAAAAAAAAiCAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAEQgAAAAAAAARCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					784,
+					1,
+					"paste",
+					null,
+					"AQAAACIIAAAAAAAA6gkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIggAAAAAAAAiCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					788,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "<template>\n    <div class=\"col-12 col-md-12 mt-5\" style=\"min-height: 50vh;\">\n        <div class=\"row\">\n            <div class=\"col-12 col-md-6\" style=\"position: relative;\">\n                <h2>Ingredients <span class=\"text-danger\">Not</span> Guessed ({{ ingredientsToGuess.length }})</h2>\n                <div class=\"row\">\n                    <div class=\"col-12 col-md-8\">\n                        <div class=\"form-floating mb-3\">\n                            <VueMultiselect v-model=\"form.ingredientSelected\" :options=\"form.ingredients\"\n                                :close-on-select=\"true\" :clear-on-select=\"true\" maxHeight=\"200\"\n                                @select=\"ingredientChange($event)\" placeholder=\"Select Ingredient\" label=\"name\"\n                                track-by=\"name\" />\n                        </div>\n                    </div>\n\n                    <div class=\"col-12 col-md-4 \">\n                        <button class=\"btn btn-lg btn-dark w-100\" @click.prevent=\"addIngredient()\">\n                            <div class=\"\">\n                                <span>Add</span>\n\n                                <v-icon name=\"ri-add-circle-fill\" scale=\"1.3\" fill=\"grey\" animation=\"flash\" hover\n                                    style=\"margin-left: 10px; cursor: pointer\" title=\"Add Ingredient\" />\n                            </div>\n                        </button>\n                    </div>\n                </div>\n\n                <draggable v-model=\"ingredientsToGuess\" :animation=\"300\" tag=\"ul\" class=\"list-group\" group=\"meals\"\n                    @change=\"checkMove\" item-key=\"1\">\n                    <template #item=\"{ element: meal }\">\n                        <li class=\"list-group-item list-group-item-dark\">{{ meal }}</li>\n                    </template>\n                </draggable>\n            </div>\n            <div class=\"col-12 col-md-6\" style=\"overflow: visible\">\n                <ConfettiExplosion :particleCount=\"200\" :force=\"0.5\" v-if=\"visible\" />\n                <h2>Ingredients Guessed ({{ ingredientsGuessed.length }})</h2>\n                <button class=\"btn btn-lg btn-dark w-100\" @click.prevent=\"addIngredient()\">\n                    <div class=\"\">\n                        <span>Add</span>\n\n                        <v-icon name=\"ri-add-circle-fill\" scale=\"1.3\" fill=\"grey\" animation=\"flash\" hover\n                            style=\"margin-left: 10px; cursor: pointer\" title=\"Add Ingredient\" />\n                    </div>\n                </button>\n                <draggable v-model=\"ingredientsGuessed\" tag=\"ul\" :animation=\"300\" class=\"list-group\" group=\"meals\"\n                    @change=\"checkMove\" item-key=\"2\">\n                    <template #item=\"{ element: meal }\">\n                        <li class=\"list-group-item list-group-item-success\">{{ meal }}</li>\n                    </template>\n                </draggable>\n            </div>\n        </div>\n    </div>\n    <div class=\"col-12\">\n        <h4>History</h4>\n        <div class=\"row\">\n\n        </div>\n    </div>\n</template>\n\n<script setup>\nimport draggable from \"vuedraggable\";\nimport { onMounted, reactive, ref, nextTick } from \"vue\";\nimport VueMultiselect from \"vue-multiselect\";\nimport customAxios from \"../axios\";\nimport ConfettiExplosion from \"vue-confetti-explosion\";\n\nonMounted(() => {\n    getIngredients();\n});\n\nconst emit = defineEmits([\"ingredientSelectedHAndler\"]);\n\nconst ingredientsToGuess = ref([]);\n\nconst ingredientsGuessed = ref([]);\nconst css_select_pr = ref(\"realtive\");\nconst visible = ref(false);\n\nconst form = reactive({\n    ingredients: [],\n    ingredientsBackup: [],\n    dilutions: [],\n    ingredientSelected: null,\n    dilutionSelected: null,\n    ppt: null,\n    amount: null,\n    quantity: null,\n    total_ppts: null,\n    ppt_per: null,\n\n});\n\nconst checkMove = async (e) => {\n    console.log(e)\n    console.log(e[\"removed\"])\n    if (e[\"added\"] != undefined) {\n        visible.value = false;\n        await nextTick();\n        visible.value = true;\n    }\n\n\n\n}\n\nconst ingredientChange = (event) => {\n    form.dilutions = form.ingredientSelected.dilutions;\n    form.dilutionSelected = Math.min(...form.dilutions.map((dil) => dil.quantity));\n};\n\nconst getIngredients = async () => {\n    form.ingredients = [];\n\n    await customAxios({\n        method: \"get\",\n        url: \"api/v1/ingredients\",\n    })\n        .then((res) => {\n            form.ingredients = res.data;\n            form.ingredientsBackup = res.data;\n        })\n        .catch((error) => {\n            console.error(error.response.data.message);\n        });\n\n    // const alchool = {\n    //   name: \"Alchool\",\n    //   casNumber: \"91-64-5\",\n    //   pyramidLevel: \"alch\",\n    //   odorDescription: \"Acxhool for perfume\",\n    //   type: \"syntetic\",\n    //   odorImpact: 0,\n    //   odorLife: 0,\n    //   dilutions: [\n    //     {\n    //       quantity: 100,\n    //     },\n    //   ],\n    //   olfactiveFamilies: [],\n    // };\n\n    // form.ingredients.push(alchool);\n};\n\nconst addIngredient = () => {\n    console.log(form.ingredientSelected)\n\n    ingredientsToGuess.value.push(form.ingredientSelected['name'])\n    if (ingredientsToGuess.value.length > 2) {\n        css_select_pr.value = \"absolute\"\n    }\n    // console.log(form.amount);\n    // console.log(form.ppt);\n    // console.log(form.total_ppts);\n    // console.log(form.ppt_per)\n    // console.log([form?.amount, form?.ppt, form?.total_ppts, form?.ppt_per]);\n\n};\n</script>\n\n<style scoped>\nli:hover {\n    cursor: pointer;\n}\n\n:deep(.multiselect__content-wrapper) {\n    max-height: 140px !important;\n    z-index: 99;\n    position: v-bind(css_select_pr);\n    display: block;\n}\n</style>",
+								"range":
+								{
+									"end":
+									{
+										"character": 8,
+										"line": 174
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAA+RUAAAAAAAA1FgAAPHRlbXBsYXRlPgogICAgPGRpdiBjbGFzcz0iY29sLTEyIGNvbC1tZC0xMiBtdC01IiBzdHlsZT0ibWluLWhlaWdodDogNTB2aDsiPgogICAgICAgIDxkaXYgY2xhc3M9InJvdyI+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC0xMiBjb2wtbWQtNiIgc3R5bGU9InBvc2l0aW9uOiByZWxhdGl2ZTsiPgogICAgICAgICAgICAgICAgPGgyPkluZ3JlZGllbnRzIDxzcGFuIGNsYXNzPSJ0ZXh0LWRhbmdlciI+Tm90PC9zcGFuPiBHdWVzc2VkICh7eyBpbmdyZWRpZW50c1RvR3Vlc3MubGVuZ3RoIH19KTwvaDI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJyb3ciPgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC0xMiBjb2wtbWQtOCI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImZvcm0tZmxvYXRpbmcgbWItMyI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8VnVlTXVsdGlzZWxlY3Qgdi1tb2RlbD0iZm9ybS5pbmdyZWRpZW50U2VsZWN0ZWQiIDpvcHRpb25zPSJmb3JtLmluZ3JlZGllbnRzIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDpjbG9zZS1vbi1zZWxlY3Q9InRydWUiIDpjbGVhci1vbi1zZWxlY3Q9InRydWUiIG1heEhlaWdodD0iMjAwIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEBzZWxlY3Q9ImluZ3JlZGllbnRDaGFuZ2UoJGV2ZW50KSIgcGxhY2Vob2xkZXI9IlNlbGVjdCBJbmdyZWRpZW50IiBsYWJlbD0ibmFtZSIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB0cmFjay1ieT0ibmFtZSIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgPC9kaXY+CgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC0xMiBjb2wtbWQtNCAiPgogICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJidG4gYnRuLWxnIGJ0bi1kYXJrIHctMTAwIiBAY2xpY2sucHJldmVudD0iYWRkSW5ncmVkaWVudCgpIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9IiI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4+QWRkPC9zcGFuPgoKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8di1pY29uIG5hbWU9InJpLWFkZC1jaXJjbGUtZmlsbCIgc2NhbGU9IjEuMyIgZmlsbD0iZ3JleSIgYW5pbWF0aW9uPSJmbGFzaCIgaG92ZXIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc3R5bGU9Im1hcmdpbi1sZWZ0OiAxMHB4OyBjdXJzb3I6IHBvaW50ZXIiIHRpdGxlPSJBZGQgSW5ncmVkaWVudCIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgICAgIDxkcmFnZ2FibGUgdi1tb2RlbD0iaW5ncmVkaWVudHNUb0d1ZXNzIiA6YW5pbWF0aW9uPSIzMDAiIHRhZz0idWwiIGNsYXNzPSJsaXN0LWdyb3VwIiBncm91cD0ibWVhbHMiCiAgICAgICAgICAgICAgICAgICAgQGNoYW5nZT0iY2hlY2tNb3ZlIiBpdGVtLWtleT0iMSI+CiAgICAgICAgICAgICAgICAgICAgPHRlbXBsYXRlICNpdGVtPSJ7IGVsZW1lbnQ6IG1lYWwgfSI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaSBjbGFzcz0ibGlzdC1ncm91cC1pdGVtIGxpc3QtZ3JvdXAtaXRlbS1kYXJrIj57eyBtZWFsIH19PC9saT4KICAgICAgICAgICAgICAgICAgICA8L3RlbXBsYXRlPgogICAgICAgICAgICAgICAgPC9kcmFnZ2FibGU+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb2wtMTIgY29sLW1kLTYiIHN0eWxlPSJvdmVyZmxvdzogdmlzaWJsZSI+CiAgICAgICAgICAgICAgICA8Q29uZmV0dGlFeHBsb3Npb24gOnBhcnRpY2xlQ291bnQ9IjIwMCIgOmZvcmNlPSIwLjUiIHYtaWY9InZpc2libGUiIC8+CiAgICAgICAgICAgICAgICA8aDI+SW5ncmVkaWVudHMgR3Vlc3NlZCAoe3sgaW5ncmVkaWVudHNHdWVzc2VkLmxlbmd0aCB9fSk8L2gyPgogICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz0iYnRuIGJ0bi1sZyBidG4tZGFyayB3LTEwMCIgQGNsaWNrLnByZXZlbnQ9ImFkZEluZ3JlZGllbnQoKSI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSIiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuPkFkZDwvc3Bhbj4KCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHYtaWNvbiBuYW1lPSJyaS1hZGQtY2lyY2xlLWZpbGwiIHNjYWxlPSIxLjMiIGZpbGw9ImdyZXkiIGFuaW1hdGlvbj0iZmxhc2giIGhvdmVyCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHN0eWxlPSJtYXJnaW4tbGVmdDogMTBweDsgY3Vyc29yOiBwb2ludGVyIiB0aXRsZT0iQWRkIEluZ3JlZGllbnQiIC8+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICAgICA8ZHJhZ2dhYmxlIHYtbW9kZWw9ImluZ3JlZGllbnRzR3Vlc3NlZCIgdGFnPSJ1bCIgOmFuaW1hdGlvbj0iMzAwIiBjbGFzcz0ibGlzdC1ncm91cCIgZ3JvdXA9Im1lYWxzIgogICAgICAgICAgICAgICAgICAgIEBjaGFuZ2U9ImNoZWNrTW92ZSIgaXRlbS1rZXk9IjIiPgogICAgICAgICAgICAgICAgICAgIDx0ZW1wbGF0ZSAjaXRlbT0ieyBlbGVtZW50OiBtZWFsIH0iPgogICAgICAgICAgICAgICAgICAgICAgICA8bGkgY2xhc3M9Imxpc3QtZ3JvdXAtaXRlbSBsaXN0LWdyb3VwLWl0ZW0tc3VjY2VzcyI+e3sgbWVhbCB9fTwvbGk+CiAgICAgICAgICAgICAgICAgICAgPC90ZW1wbGF0ZT4KICAgICAgICAgICAgICAgIDwvZHJhZ2dhYmxlPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICAgPGRpdiBjbGFzcz0iY29sLTEyIj4KICAgICAgICA8aDQ+SGlzdG9yeTwvaDQ+CiAgICAgICAgPGRpdiBjbGFzcz0icm93Ij4KICAgICAgICAgICAgCiAgICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KPC90ZW1wbGF0ZT4KCjxzY3JpcHQgc2V0dXA+CmltcG9ydCBkcmFnZ2FibGUgZnJvbSAidnVlZHJhZ2dhYmxlIjsKaW1wb3J0IHsgb25Nb3VudGVkLCByZWFjdGl2ZSwgcmVmLCBuZXh0VGljayB9IGZyb20gInZ1ZSI7CmltcG9ydCBWdWVNdWx0aXNlbGVjdCBmcm9tICJ2dWUtbXVsdGlzZWxlY3QiOwppbXBvcnQgY3VzdG9tQXhpb3MgZnJvbSAiLi4vYXhpb3MiOwppbXBvcnQgQ29uZmV0dGlFeHBsb3Npb24gZnJvbSAidnVlLWNvbmZldHRpLWV4cGxvc2lvbiI7Cgpvbk1vdW50ZWQoKCkgPT4gewogICAgZ2V0SW5ncmVkaWVudHMoKTsKfSk7Cgpjb25zdCBlbWl0ID0gZGVmaW5lRW1pdHMoWyJpbmdyZWRpZW50U2VsZWN0ZWRIQW5kbGVyIl0pOwoKY29uc3QgaW5ncmVkaWVudHNUb0d1ZXNzID0gcmVmKFtdKTsKCmNvbnN0IGluZ3JlZGllbnRzR3Vlc3NlZCA9IHJlZihbXSk7CmNvbnN0IGNzc19zZWxlY3RfcHIgPSByZWYoInJlYWx0aXZlIik7CmNvbnN0IHZpc2libGUgPSByZWYoZmFsc2UpOwoKY29uc3QgZm9ybSA9IHJlYWN0aXZlKHsKICAgIGluZ3JlZGllbnRzOiBbXSwKICAgIGluZ3JlZGllbnRzQmFja3VwOiBbXSwKICAgIGRpbHV0aW9uczogW10sCiAgICBpbmdyZWRpZW50U2VsZWN0ZWQ6IG51bGwsCiAgICBkaWx1dGlvblNlbGVjdGVkOiBudWxsLAogICAgcHB0OiBudWxsLAogICAgYW1vdW50OiBudWxsLAogICAgcXVhbnRpdHk6IG51bGwsCiAgICB0b3RhbF9wcHRzOiBudWxsLAogICAgcHB0X3BlcjogbnVsbCwKCn0pOwoKY29uc3QgY2hlY2tNb3ZlID0gYXN5bmMgKGUpID0+IHsKICAgIGNvbnNvbGUubG9nKGUpCiAgICBjb25zb2xlLmxvZyhlWyJyZW1vdmVkIl0pCiAgICBpZiAoZVsiYWRkZWQiXSAhPSB1bmRlZmluZWQpIHsKICAgICAgICB2aXNpYmxlLnZhbHVlID0gZmFsc2U7CiAgICAgICAgYXdhaXQgbmV4dFRpY2soKTsKICAgICAgICB2aXNpYmxlLnZhbHVlID0gdHJ1ZTsKICAgIH0KCgoKfQoKY29uc3QgaW5ncmVkaWVudENoYW5nZSA9IChldmVudCkgPT4gewogICAgZm9ybS5kaWx1dGlvbnMgPSBmb3JtLmluZ3JlZGllbnRTZWxlY3RlZC5kaWx1dGlvbnM7CiAgICBmb3JtLmRpbHV0aW9uU2VsZWN0ZWQgPSBNYXRoLm1pbiguLi5mb3JtLmRpbHV0aW9ucy5tYXAoKGRpbCkgPT4gZGlsLnF1YW50aXR5KSk7Cn07Cgpjb25zdCBnZXRJbmdyZWRpZW50cyA9IGFzeW5jICgpID0+IHsKICAgIGZvcm0uaW5ncmVkaWVudHMgPSBbXTsKCiAgICBhd2FpdCBjdXN0b21BeGlvcyh7CiAgICAgICAgbWV0aG9kOiAiZ2V0IiwKICAgICAgICB1cmw6ICJhcGkvdjEvaW5ncmVkaWVudHMiLAogICAgfSkKICAgICAgICAudGhlbigocmVzKSA9PiB7CiAgICAgICAgICAgIGZvcm0uaW5ncmVkaWVudHMgPSByZXMuZGF0YTsKICAgICAgICAgICAgZm9ybS5pbmdyZWRpZW50c0JhY2t1cCA9IHJlcy5kYXRhOwogICAgICAgIH0pCiAgICAgICAgLmNhdGNoKChlcnJvcikgPT4gewogICAgICAgICAgICBjb25zb2xlLmVycm9yKGVycm9yLnJlc3BvbnNlLmRhdGEubWVzc2FnZSk7CiAgICAgICAgfSk7CgogICAgLy8gY29uc3QgYWxjaG9vbCA9IHsKICAgIC8vICAgbmFtZTogIkFsY2hvb2wiLAogICAgLy8gICBjYXNOdW1iZXI6ICI5MS02NC01IiwKICAgIC8vICAgcHlyYW1pZExldmVsOiAiYWxjaCIsCiAgICAvLyAgIG9kb3JEZXNjcmlwdGlvbjogIkFjeGhvb2wgZm9yIHBlcmZ1bWUiLAogICAgLy8gICB0eXBlOiAic3ludGV0aWMiLAogICAgLy8gICBvZG9ySW1wYWN0OiAwLAogICAgLy8gICBvZG9yTGlmZTogMCwKICAgIC8vICAgZGlsdXRpb25zOiBbCiAgICAvLyAgICAgewogICAgLy8gICAgICAgcXVhbnRpdHk6IDEwMCwKICAgIC8vICAgICB9LAogICAgLy8gICBdLAogICAgLy8gICBvbGZhY3RpdmVGYW1pbGllczogW10sCiAgICAvLyB9OwoKICAgIC8vIGZvcm0uaW5ncmVkaWVudHMucHVzaChhbGNob29sKTsKfTsKCmNvbnN0IGFkZEluZ3JlZGllbnQgPSAoKSA9PiB7CiAgICBjb25zb2xlLmxvZyhmb3JtLmluZ3JlZGllbnRTZWxlY3RlZCkKCiAgICBpbmdyZWRpZW50c1RvR3Vlc3MudmFsdWUucHVzaChmb3JtLmluZ3JlZGllbnRTZWxlY3RlZFsnbmFtZSddKQogICAgaWYgKGluZ3JlZGllbnRzVG9HdWVzcy52YWx1ZS5sZW5ndGggPiAyKSB7CiAgICAgICAgY3NzX3NlbGVjdF9wci52YWx1ZSA9ICJhYnNvbHV0ZSIKICAgIH0KICAgIC8vIGNvbnNvbGUubG9nKGZvcm0uYW1vdW50KTsKICAgIC8vIGNvbnNvbGUubG9nKGZvcm0ucHB0KTsKICAgIC8vIGNvbnNvbGUubG9nKGZvcm0udG90YWxfcHB0cyk7CiAgICAvLyBjb25zb2xlLmxvZyhmb3JtLnBwdF9wZXIpCiAgICAvLyBjb25zb2xlLmxvZyhbZm9ybT8uYW1vdW50LCBmb3JtPy5wcHQsIGZvcm0/LnRvdGFsX3BwdHMsIGZvcm0/LnBwdF9wZXJdKTsKCn07Cjwvc2NyaXB0PgoKPHN0eWxlIHNjb3BlZD4KbGk6aG92ZXIgewogICAgY3Vyc29yOiBwb2ludGVyOwp9Cgo6ZGVlcCgubXVsdGlzZWxlY3RfX2NvbnRlbnQtd3JhcHBlcikgewogICAgbWF4LWhlaWdodDogMTQwcHggIWltcG9ydGFudDsKICAgIHotaW5kZXg6IDk5OwogICAgcG9zaXRpb246IHYtYmluZChjc3Nfc2VsZWN0X3ByKTsKICAgIGRpc3BsYXk6IGJsb2NrOwp9Cjwvc3R5bGU+",
+					"AQAAAAAAAAABAAAA6gkAAAAAAADqCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					794,
+					1,
+					"insert",
+					{
+						"characters": "S"
+					},
+					"AgAAAK8IAAAAAAAAsAgAAAAAAAAAAAAAsAgAAAAAAACwCAAAAAAAAAMAAABBZGQ",
+					"AQAAAAAAAAABAAAArwgAAAAAAACyCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					796,
+					1,
+					"insert",
+					{
+						"characters": "a"
+					},
+					"AQAAALAIAAAAAAAAsQgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAsAgAAAAAAACwCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					798,
+					1,
+					"insert",
+					{
+						"characters": "v"
+					},
+					"AQAAALEIAAAAAAAAsggAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAsQgAAAAAAACxCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					800,
+					1,
+					"insert",
+					{
+						"characters": "e"
+					},
+					"AQAAALIIAAAAAAAAswgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAsggAAAAAAACyCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					810,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAAMIHAAAAAAAAwwcAAAAAAAAAAAAAwwcAAAAAAADTBwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwgcAAAAAAADCBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					813,
+					1,
+					"insert",
+					{
+						"characters": ".row"
+					},
+					"BAAAANMHAAAAAAAA1AcAAAAAAAAAAAAA1AcAAAAAAADVBwAAAAAAAAAAAADVBwAAAAAAANYHAAAAAAAAAAAAANYHAAAAAAAA1wcAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0wcAAAAAAADTBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					814,
+					1,
+					"emmet_expand_abbreviation",
+					{
+						"tab": true
+					},
+					"AgAAANMHAAAAAAAA0wcAAAAAAAAEAAAALnJvd9MHAAAAAAAA6gcAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA1wcAAAAAAADXBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					815,
+					1,
+					"auto_indent_tag",
+					null,
+					"AQAAAOQHAAAAAAAACggAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA5AcAAAAAAADkBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					817,
+					1,
+					"insert",
+					{
+						"characters": "-col"
+					},
+					"BAAAAPkHAAAAAAAA+gcAAAAAAAAAAAAA+gcAAAAAAAD7BwAAAAAAAAAAAAD7BwAAAAAAAPwHAAAAAAAAAAAAAPwHAAAAAAAA/QcAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA+QcAAAAAAAD5BwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					818,
+					3,
+					"left_delete",
+					null,
+					"AwAAAPwHAAAAAAAA/AcAAAAAAAABAAAAbPsHAAAAAAAA+wcAAAAAAAABAAAAb/oHAAAAAAAA+gcAAAAAAAABAAAAYw",
+					"AQAAAAAAAAABAAAA/QcAAAAAAAD9BwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					819,
+					1,
+					"insert",
+					{
+						"characters": "."
+					},
+					"AQAAAPoHAAAAAAAA+wcAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA+gcAAAAAAAD6BwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					820,
+					2,
+					"left_delete",
+					null,
+					"AgAAAPoHAAAAAAAA+gcAAAAAAAABAAAALvkHAAAAAAAA+QcAAAAAAAABAAAALQ",
+					"AQAAAAAAAAABAAAA+wcAAAAAAAD7BwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					821,
+					1,
+					"insert",
+					{
+						"characters": ".col-12"
+					},
+					"BwAAAPkHAAAAAAAA+gcAAAAAAAAAAAAA+gcAAAAAAAD7BwAAAAAAAAAAAAD7BwAAAAAAAPwHAAAAAAAAAAAAAPwHAAAAAAAA/QcAAAAAAAAAAAAA/QcAAAAAAAD+BwAAAAAAAAAAAAD+BwAAAAAAAP8HAAAAAAAAAAAAAP8HAAAAAAAAAAgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA+QcAAAAAAAD5BwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					822,
+					1,
+					"emmet_expand_abbreviation",
+					{
+						"tab": true
+					},
+					"AgAAAPkHAAAAAAAA+QcAAAAAAAAHAAAALmNvbC0xMvkHAAAAAAAAEwgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					824,
+					1,
+					"insert",
+					{
+						"characters": " copl"
+					},
+					"BQAAAAsIAAAAAAAADAgAAAAAAAAAAAAADAgAAAAAAAANCAAAAAAAAAAAAAANCAAAAAAAAA4IAAAAAAAAAAAAAA4IAAAAAAAADwgAAAAAAAAAAAAADwgAAAAAAAAQCAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAACwgAAAAAAAALCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					825,
+					2,
+					"left_delete",
+					null,
+					"AgAAAA8IAAAAAAAADwgAAAAAAAABAAAAbA4IAAAAAAAADggAAAAAAAABAAAAcA",
+					"AQAAAAAAAAABAAAAEAgAAAAAAAAQCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					826,
+					1,
+					"insert_completion",
+					{
+						"completion": "col-md-6",
+						"format": "text",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "col-md-6"
+					},
+					"AgAAAAwIAAAAAAAADAgAAAAAAAACAAAAY28MCAAAAAAAABQIAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADggAAAAAAAAOCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					829,
+					1,
+					"duplicate_line",
+					null,
+					"AQAAAB0IAAAAAAAAVQgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAFggAAAAAAAAWCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					834,
+					1,
+					"cut",
+					null,
+					"AQAAAHwIAAAAAAAAfAgAAAAAAAA+AAAAPGgyPkluZ3JlZGllbnRzIEd1ZXNzZWQgKHt7IGluZ3JlZGllbnRzR3Vlc3NlZC5sZW5ndGggfX0pPC9oMj4",
+					"AQAAAAAAAAABAAAAfAgAAAAAAAC6CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					839,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAABYIAAAAAAAAFwgAAAAAAAAAAAAAFwgAAAAAAAArCAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAFggAAAAAAAAWCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					841,
+					1,
+					"paste",
+					null,
+					"AQAAACsIAAAAAAAAaQgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAKwgAAAAAAAArCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					844,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"BAAAAGkIAAAAAAAAaggAAAAAAAAAAAAAaggAAAAAAAB+CAAAAAAAAAAAAABqCAAAAAAAAGoIAAAAAAAAFAAAACAgICAgICAgICAgICAgICAgICAgaggAAAAAAAB6CAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAaQgAAAAAAABpCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					848,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "<template>\n    <div class=\"col-12 col-md-12 mt-5\" style=\"min-height: 50vh;\">\n        <div class=\"row\">\n            <div class=\"col-12 col-md-6\" style=\"position: relative;\">\n                <h2>Ingredients <span class=\"text-danger\">Not</span> Guessed ({{ ingredientsToGuess.length }})</h2>\n                <div class=\"row\">\n                    <div class=\"col-12 col-md-8\">\n                        <div class=\"form-floating mb-3\">\n                            <VueMultiselect v-model=\"form.ingredientSelected\" :options=\"form.ingredients\"\n                                :close-on-select=\"true\" :clear-on-select=\"true\" maxHeight=\"200\"\n                                @select=\"ingredientChange($event)\" placeholder=\"Select Ingredient\" label=\"name\"\n                                track-by=\"name\" />\n                        </div>\n                    </div>\n\n                    <div class=\"col-12 col-md-4 \">\n                        <button class=\"btn btn-lg btn-dark w-100\" @click.prevent=\"addIngredient()\">\n                            <div class=\"\">\n                                <span>Add</span>\n\n                                <v-icon name=\"ri-add-circle-fill\" scale=\"1.3\" fill=\"grey\" animation=\"flash\" hover\n                                    style=\"margin-left: 10px; cursor: pointer\" title=\"Add Ingredient\" />\n                            </div>\n                        </button>\n                    </div>\n                </div>\n\n                <draggable v-model=\"ingredientsToGuess\" :animation=\"300\" tag=\"ul\" class=\"list-group\" group=\"meals\"\n                    @change=\"checkMove\" item-key=\"1\">\n                    <template #item=\"{ element: meal }\">\n                        <li class=\"list-group-item list-group-item-dark\">{{ meal }}</li>\n                    </template>\n                </draggable>\n            </div>\n            <div class=\"col-12 col-md-6\" style=\"overflow: visible\">\n                <ConfettiExplosion :particleCount=\"200\" :force=\"0.5\" v-if=\"visible\" />\n                <div class=\"row\">\n                    <div class=\"col-12 col-md-6\">\n                        <h2>Ingredients Guessed ({{ ingredientsGuessed.length }})</h2>\n                    </div>\n                    <div class=\"col-12 col-md-6\"></div>\n                </div>\n\n                <button class=\"btn btn-lg btn-dark w-100\" @click.prevent=\"addIngredient()\">\n                    <div class=\"\">\n                        <span>Save</span>\n\n                        <v-icon name=\"ri-add-circle-fill\" scale=\"1.3\" fill=\"grey\" animation=\"flash\" hover\n                            style=\"margin-left: 10px; cursor: pointer\" title=\"Add Ingredient\" />\n                    </div>\n                </button>\n                <draggable v-model=\"ingredientsGuessed\" tag=\"ul\" :animation=\"300\" class=\"list-group\" group=\"meals\"\n                    @change=\"checkMove\" item-key=\"2\">\n                    <template #item=\"{ element: meal }\">\n                        <li class=\"list-group-item list-group-item-success\">{{ meal }}</li>\n                    </template>\n                </draggable>\n            </div>\n        </div>\n    </div>\n    <div class=\"col-12\">\n        <h4>History</h4>\n        <div class=\"row\">\n\n        </div>\n    </div>\n</template>\n\n<script setup>\nimport draggable from \"vuedraggable\";\nimport { onMounted, reactive, ref, nextTick } from \"vue\";\nimport VueMultiselect from \"vue-multiselect\";\nimport customAxios from \"../axios\";\nimport ConfettiExplosion from \"vue-confetti-explosion\";\n\nonMounted(() => {\n    getIngredients();\n});\n\nconst emit = defineEmits([\"ingredientSelectedHAndler\"]);\n\nconst ingredientsToGuess = ref([]);\n\nconst ingredientsGuessed = ref([]);\nconst css_select_pr = ref(\"realtive\");\nconst visible = ref(false);\n\nconst form = reactive({\n    ingredients: [],\n    ingredientsBackup: [],\n    dilutions: [],\n    ingredientSelected: null,\n    dilutionSelected: null,\n    ppt: null,\n    amount: null,\n    quantity: null,\n    total_ppts: null,\n    ppt_per: null,\n\n});\n\nconst checkMove = async (e) => {\n    console.log(e)\n    console.log(e[\"removed\"])\n    if (e[\"added\"] != undefined) {\n        visible.value = false;\n        await nextTick();\n        visible.value = true;\n    }\n\n\n\n}\n\nconst ingredientChange = (event) => {\n    form.dilutions = form.ingredientSelected.dilutions;\n    form.dilutionSelected = Math.min(...form.dilutions.map((dil) => dil.quantity));\n};\n\nconst getIngredients = async () => {\n    form.ingredients = [];\n\n    await customAxios({\n        method: \"get\",\n        url: \"api/v1/ingredients\",\n    })\n        .then((res) => {\n            form.ingredients = res.data;\n            form.ingredientsBackup = res.data;\n        })\n        .catch((error) => {\n            console.error(error.response.data.message);\n        });\n\n    // const alchool = {\n    //   name: \"Alchool\",\n    //   casNumber: \"91-64-5\",\n    //   pyramidLevel: \"alch\",\n    //   odorDescription: \"Acxhool for perfume\",\n    //   type: \"syntetic\",\n    //   odorImpact: 0,\n    //   odorLife: 0,\n    //   dilutions: [\n    //     {\n    //       quantity: 100,\n    //     },\n    //   ],\n    //   olfactiveFamilies: [],\n    // };\n\n    // form.ingredients.push(alchool);\n};\n\nconst addIngredient = () => {\n    console.log(form.ingredientSelected)\n\n    ingredientsToGuess.value.push(form.ingredientSelected['name'])\n    if (ingredientsToGuess.value.length > 2) {\n        css_select_pr.value = \"absolute\"\n    }\n    // console.log(form.amount);\n    // console.log(form.ppt);\n    // console.log(form.total_ppts);\n    // console.log(form.ppt_per)\n    // console.log([form?.amount, form?.ppt, form?.total_ppts, form?.ppt_per]);\n\n};\n</script>\n\n<style scoped>\nli:hover {\n    cursor: pointer;\n}\n\n:deep(.multiselect__content-wrapper) {\n    max-height: 140px !important;\n    z-index: 99;\n    position: v-bind(css_select_pr);\n    display: block;\n}\n</style>",
+								"range":
+								{
+									"end":
+									{
+										"character": 8,
+										"line": 180
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAAwRYAAAAAAADJFgAAPHRlbXBsYXRlPgogICAgPGRpdiBjbGFzcz0iY29sLTEyIGNvbC1tZC0xMiBtdC01IiBzdHlsZT0ibWluLWhlaWdodDogNTB2aDsiPgogICAgICAgIDxkaXYgY2xhc3M9InJvdyI+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC0xMiBjb2wtbWQtNiIgc3R5bGU9InBvc2l0aW9uOiByZWxhdGl2ZTsiPgogICAgICAgICAgICAgICAgPGgyPkluZ3JlZGllbnRzIDxzcGFuIGNsYXNzPSJ0ZXh0LWRhbmdlciI+Tm90PC9zcGFuPiBHdWVzc2VkICh7eyBpbmdyZWRpZW50c1RvR3Vlc3MubGVuZ3RoIH19KTwvaDI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJyb3ciPgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC0xMiBjb2wtbWQtOCI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImZvcm0tZmxvYXRpbmcgbWItMyI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8VnVlTXVsdGlzZWxlY3Qgdi1tb2RlbD0iZm9ybS5pbmdyZWRpZW50U2VsZWN0ZWQiIDpvcHRpb25zPSJmb3JtLmluZ3JlZGllbnRzIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDpjbG9zZS1vbi1zZWxlY3Q9InRydWUiIDpjbGVhci1vbi1zZWxlY3Q9InRydWUiIG1heEhlaWdodD0iMjAwIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEBzZWxlY3Q9ImluZ3JlZGllbnRDaGFuZ2UoJGV2ZW50KSIgcGxhY2Vob2xkZXI9IlNlbGVjdCBJbmdyZWRpZW50IiBsYWJlbD0ibmFtZSIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB0cmFjay1ieT0ibmFtZSIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgPC9kaXY+CgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC0xMiBjb2wtbWQtNCAiPgogICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJidG4gYnRuLWxnIGJ0bi1kYXJrIHctMTAwIiBAY2xpY2sucHJldmVudD0iYWRkSW5ncmVkaWVudCgpIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9IiI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4+QWRkPC9zcGFuPgoKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8di1pY29uIG5hbWU9InJpLWFkZC1jaXJjbGUtZmlsbCIgc2NhbGU9IjEuMyIgZmlsbD0iZ3JleSIgYW5pbWF0aW9uPSJmbGFzaCIgaG92ZXIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc3R5bGU9Im1hcmdpbi1sZWZ0OiAxMHB4OyBjdXJzb3I6IHBvaW50ZXIiIHRpdGxlPSJBZGQgSW5ncmVkaWVudCIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgICAgIDxkcmFnZ2FibGUgdi1tb2RlbD0iaW5ncmVkaWVudHNUb0d1ZXNzIiA6YW5pbWF0aW9uPSIzMDAiIHRhZz0idWwiIGNsYXNzPSJsaXN0LWdyb3VwIiBncm91cD0ibWVhbHMiCiAgICAgICAgICAgICAgICAgICAgQGNoYW5nZT0iY2hlY2tNb3ZlIiBpdGVtLWtleT0iMSI+CiAgICAgICAgICAgICAgICAgICAgPHRlbXBsYXRlICNpdGVtPSJ7IGVsZW1lbnQ6IG1lYWwgfSI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaSBjbGFzcz0ibGlzdC1ncm91cC1pdGVtIGxpc3QtZ3JvdXAtaXRlbS1kYXJrIj57eyBtZWFsIH19PC9saT4KICAgICAgICAgICAgICAgICAgICA8L3RlbXBsYXRlPgogICAgICAgICAgICAgICAgPC9kcmFnZ2FibGU+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb2wtMTIgY29sLW1kLTYiIHN0eWxlPSJvdmVyZmxvdzogdmlzaWJsZSI+CiAgICAgICAgICAgICAgICA8Q29uZmV0dGlFeHBsb3Npb24gOnBhcnRpY2xlQ291bnQ9IjIwMCIgOmZvcmNlPSIwLjUiIHYtaWY9InZpc2libGUiIC8+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJyb3ciPgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC0xMiBjb2wtbWQtNiI+CiAgICAgICAgICAgICAgICAgICAgPGgyPkluZ3JlZGllbnRzIEd1ZXNzZWQgKHt7IGluZ3JlZGllbnRzR3Vlc3NlZC5sZW5ndGggfX0pPC9oMj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC0xMiBjb2wtbWQtNiI+PC9kaXY+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz0iYnRuIGJ0bi1sZyBidG4tZGFyayB3LTEwMCIgQGNsaWNrLnByZXZlbnQ9ImFkZEluZ3JlZGllbnQoKSI+CiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iIj4KICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4+U2F2ZTwvc3Bhbj4KCiAgICAgICAgICAgICAgICAgICAgICAgIDx2LWljb24gbmFtZT0icmktYWRkLWNpcmNsZS1maWxsIiBzY2FsZT0iMS4zIiBmaWxsPSJncmV5IiBhbmltYXRpb249ImZsYXNoIiBob3ZlcgogICAgICAgICAgICAgICAgICAgICAgICAgICAgc3R5bGU9Im1hcmdpbi1sZWZ0OiAxMHB4OyBjdXJzb3I6IHBvaW50ZXIiIHRpdGxlPSJBZGQgSW5ncmVkaWVudCIgLz4KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICAgICAgPGRyYWdnYWJsZSB2LW1vZGVsPSJpbmdyZWRpZW50c0d1ZXNzZWQiIHRhZz0idWwiIDphbmltYXRpb249IjMwMCIgY2xhc3M9Imxpc3QtZ3JvdXAiIGdyb3VwPSJtZWFscyIKICAgICAgICAgICAgICAgICAgICBAY2hhbmdlPSJjaGVja01vdmUiIGl0ZW0ta2V5PSIyIj4KICAgICAgICAgICAgICAgICAgICA8dGVtcGxhdGUgI2l0ZW09InsgZWxlbWVudDogbWVhbCB9Ij4KICAgICAgICAgICAgICAgICAgICAgICAgPGxpIGNsYXNzPSJsaXN0LWdyb3VwLWl0ZW0gbGlzdC1ncm91cC1pdGVtLXN1Y2Nlc3MiPnt7IG1lYWwgfX08L2xpPgogICAgICAgICAgICAgICAgICAgIDwvdGVtcGxhdGU+CiAgICAgICAgICAgICAgICA8L2RyYWdnYWJsZT4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICAgIDxkaXYgY2xhc3M9ImNvbC0xMiI+CiAgICAgICAgPGg0Pkhpc3Rvcnk8L2g0PgogICAgICAgIDxkaXYgY2xhc3M9InJvdyI+CgogICAgICAgIDwvZGl2PgogICAgPC9kaXY+CjwvdGVtcGxhdGU+Cgo8c2NyaXB0IHNldHVwPgppbXBvcnQgZHJhZ2dhYmxlIGZyb20gInZ1ZWRyYWdnYWJsZSI7CmltcG9ydCB7IG9uTW91bnRlZCwgcmVhY3RpdmUsIHJlZiwgbmV4dFRpY2sgfSBmcm9tICJ2dWUiOwppbXBvcnQgVnVlTXVsdGlzZWxlY3QgZnJvbSAidnVlLW11bHRpc2VsZWN0IjsKaW1wb3J0IGN1c3RvbUF4aW9zIGZyb20gIi4uL2F4aW9zIjsKaW1wb3J0IENvbmZldHRpRXhwbG9zaW9uIGZyb20gInZ1ZS1jb25mZXR0aS1leHBsb3Npb24iOwoKb25Nb3VudGVkKCgpID0+IHsKICAgIGdldEluZ3JlZGllbnRzKCk7Cn0pOwoKY29uc3QgZW1pdCA9IGRlZmluZUVtaXRzKFsiaW5ncmVkaWVudFNlbGVjdGVkSEFuZGxlciJdKTsKCmNvbnN0IGluZ3JlZGllbnRzVG9HdWVzcyA9IHJlZihbXSk7Cgpjb25zdCBpbmdyZWRpZW50c0d1ZXNzZWQgPSByZWYoW10pOwpjb25zdCBjc3Nfc2VsZWN0X3ByID0gcmVmKCJyZWFsdGl2ZSIpOwpjb25zdCB2aXNpYmxlID0gcmVmKGZhbHNlKTsKCmNvbnN0IGZvcm0gPSByZWFjdGl2ZSh7CiAgICBpbmdyZWRpZW50czogW10sCiAgICBpbmdyZWRpZW50c0JhY2t1cDogW10sCiAgICBkaWx1dGlvbnM6IFtdLAogICAgaW5ncmVkaWVudFNlbGVjdGVkOiBudWxsLAogICAgZGlsdXRpb25TZWxlY3RlZDogbnVsbCwKICAgIHBwdDogbnVsbCwKICAgIGFtb3VudDogbnVsbCwKICAgIHF1YW50aXR5OiBudWxsLAogICAgdG90YWxfcHB0czogbnVsbCwKICAgIHBwdF9wZXI6IG51bGwsCgp9KTsKCmNvbnN0IGNoZWNrTW92ZSA9IGFzeW5jIChlKSA9PiB7CiAgICBjb25zb2xlLmxvZyhlKQogICAgY29uc29sZS5sb2coZVsicmVtb3ZlZCJdKQogICAgaWYgKGVbImFkZGVkIl0gIT0gdW5kZWZpbmVkKSB7CiAgICAgICAgdmlzaWJsZS52YWx1ZSA9IGZhbHNlOwogICAgICAgIGF3YWl0IG5leHRUaWNrKCk7CiAgICAgICAgdmlzaWJsZS52YWx1ZSA9IHRydWU7CiAgICB9CgoKCn0KCmNvbnN0IGluZ3JlZGllbnRDaGFuZ2UgPSAoZXZlbnQpID0+IHsKICAgIGZvcm0uZGlsdXRpb25zID0gZm9ybS5pbmdyZWRpZW50U2VsZWN0ZWQuZGlsdXRpb25zOwogICAgZm9ybS5kaWx1dGlvblNlbGVjdGVkID0gTWF0aC5taW4oLi4uZm9ybS5kaWx1dGlvbnMubWFwKChkaWwpID0+IGRpbC5xdWFudGl0eSkpOwp9OwoKY29uc3QgZ2V0SW5ncmVkaWVudHMgPSBhc3luYyAoKSA9PiB7CiAgICBmb3JtLmluZ3JlZGllbnRzID0gW107CgogICAgYXdhaXQgY3VzdG9tQXhpb3MoewogICAgICAgIG1ldGhvZDogImdldCIsCiAgICAgICAgdXJsOiAiYXBpL3YxL2luZ3JlZGllbnRzIiwKICAgIH0pCiAgICAgICAgLnRoZW4oKHJlcykgPT4gewogICAgICAgICAgICBmb3JtLmluZ3JlZGllbnRzID0gcmVzLmRhdGE7CiAgICAgICAgICAgIGZvcm0uaW5ncmVkaWVudHNCYWNrdXAgPSByZXMuZGF0YTsKICAgICAgICB9KQogICAgICAgIC5jYXRjaCgoZXJyb3IpID0+IHsKICAgICAgICAgICAgY29uc29sZS5lcnJvcihlcnJvci5yZXNwb25zZS5kYXRhLm1lc3NhZ2UpOwogICAgICAgIH0pOwoKICAgIC8vIGNvbnN0IGFsY2hvb2wgPSB7CiAgICAvLyAgIG5hbWU6ICJBbGNob29sIiwKICAgIC8vICAgY2FzTnVtYmVyOiAiOTEtNjQtNSIsCiAgICAvLyAgIHB5cmFtaWRMZXZlbDogImFsY2giLAogICAgLy8gICBvZG9yRGVzY3JpcHRpb246ICJBY3hob29sIGZvciBwZXJmdW1lIiwKICAgIC8vICAgdHlwZTogInN5bnRldGljIiwKICAgIC8vICAgb2RvckltcGFjdDogMCwKICAgIC8vICAgb2RvckxpZmU6IDAsCiAgICAvLyAgIGRpbHV0aW9uczogWwogICAgLy8gICAgIHsKICAgIC8vICAgICAgIHF1YW50aXR5OiAxMDAsCiAgICAvLyAgICAgfSwKICAgIC8vICAgXSwKICAgIC8vICAgb2xmYWN0aXZlRmFtaWxpZXM6IFtdLAogICAgLy8gfTsKCiAgICAvLyBmb3JtLmluZ3JlZGllbnRzLnB1c2goYWxjaG9vbCk7Cn07Cgpjb25zdCBhZGRJbmdyZWRpZW50ID0gKCkgPT4gewogICAgY29uc29sZS5sb2coZm9ybS5pbmdyZWRpZW50U2VsZWN0ZWQpCgogICAgaW5ncmVkaWVudHNUb0d1ZXNzLnZhbHVlLnB1c2goZm9ybS5pbmdyZWRpZW50U2VsZWN0ZWRbJ25hbWUnXSkKICAgIGlmIChpbmdyZWRpZW50c1RvR3Vlc3MudmFsdWUubGVuZ3RoID4gMikgewogICAgICAgIGNzc19zZWxlY3RfcHIudmFsdWUgPSAiYWJzb2x1dGUiCiAgICB9CiAgICAvLyBjb25zb2xlLmxvZyhmb3JtLmFtb3VudCk7CiAgICAvLyBjb25zb2xlLmxvZyhmb3JtLnBwdCk7CiAgICAvLyBjb25zb2xlLmxvZyhmb3JtLnRvdGFsX3BwdHMpOwogICAgLy8gY29uc29sZS5sb2coZm9ybS5wcHRfcGVyKQogICAgLy8gY29uc29sZS5sb2coW2Zvcm0/LmFtb3VudCwgZm9ybT8ucHB0LCBmb3JtPy50b3RhbF9wcHRzLCBmb3JtPy5wcHRfcGVyXSk7Cgp9Owo8L3NjcmlwdD4KCjxzdHlsZSBzY29wZWQ+CmxpOmhvdmVyIHsKICAgIGN1cnNvcjogcG9pbnRlcjsKfQoKOmRlZXAoLm11bHRpc2VsZWN0X19jb250ZW50LXdyYXBwZXIpIHsKICAgIG1heC1oZWlnaHQ6IDE0MHB4ICFpbXBvcnRhbnQ7CiAgICB6LWluZGV4OiA5OTsKICAgIHBvc2l0aW9uOiB2LWJpbmQoY3NzX3NlbGVjdF9wcik7CiAgICBkaXNwbGF5OiBibG9jazsKfQo8L3N0eWxlPg",
+					"AQAAAAAAAAABAAAAeggAAAAAAAB6CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					852,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAALoIAAAAAAAAuwgAAAAAAAAAAAAAuwgAAAAAAADPCAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAuggAAAAAAAC6CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					857,
+					1,
+					"cut",
+					null,
+					"AQAAAO0IAAAAAAAA7QgAAAAAAACqAQAACiAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJidG4gYnRuLWxnIGJ0bi1kYXJrIHctMTAwIiBAY2xpY2sucHJldmVudD0iYWRkSW5ncmVkaWVudCgpIj4KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSIiPgogICAgICAgICAgICAgICAgICAgICAgICA8c3Bhbj5TYXZlPC9zcGFuPgoKICAgICAgICAgICAgICAgICAgICAgICAgPHYtaWNvbiBuYW1lPSJyaS1hZGQtY2lyY2xlLWZpbGwiIHNjYWxlPSIxLjMiIGZpbGw9ImdyZXkiIGFuaW1hdGlvbj0iZmxhc2giIGhvdmVyCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBzdHlsZT0ibWFyZ2luLWxlZnQ6IDEwcHg7IGN1cnNvcjogcG9pbnRlciIgdGl0bGU9IkFkZCBJbmdyZWRpZW50IiAvPgogICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPC9idXR0b24+",
+					"AQAAAAAAAAABAAAA7QgAAAAAAACXCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					862,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AwAAALoIAAAAAAAAuwgAAAAAAAAAAAAAuwgAAAAAAADPCAAAAAAAAAAAAADPCAAAAAAAANMIAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAuggAAAAAAAC6CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					864,
+					1,
+					"paste",
+					null,
+					"AQAAANMIAAAAAAAAfQoAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0wgAAAAAAADTCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					868,
+					1,
+					"lsp_apply_document_edit",
+					{
+						"changes":
+						[
+							{
+								"newText": "<template>\n    <div class=\"col-12 col-md-12 mt-5\" style=\"min-height: 50vh;\">\n        <div class=\"row\">\n            <div class=\"col-12 col-md-6\" style=\"position: relative;\">\n                <h2>Ingredients <span class=\"text-danger\">Not</span> Guessed ({{ ingredientsToGuess.length }})</h2>\n                <div class=\"row\">\n                    <div class=\"col-12 col-md-8\">\n                        <div class=\"form-floating mb-3\">\n                            <VueMultiselect v-model=\"form.ingredientSelected\" :options=\"form.ingredients\"\n                                :close-on-select=\"true\" :clear-on-select=\"true\" maxHeight=\"200\"\n                                @select=\"ingredientChange($event)\" placeholder=\"Select Ingredient\" label=\"name\"\n                                track-by=\"name\" />\n                        </div>\n                    </div>\n\n                    <div class=\"col-12 col-md-4 \">\n                        <button class=\"btn btn-lg btn-dark w-100\" @click.prevent=\"addIngredient()\">\n                            <div class=\"\">\n                                <span>Add</span>\n\n                                <v-icon name=\"ri-add-circle-fill\" scale=\"1.3\" fill=\"grey\" animation=\"flash\" hover\n                                    style=\"margin-left: 10px; cursor: pointer\" title=\"Add Ingredient\" />\n                            </div>\n                        </button>\n                    </div>\n                </div>\n\n                <draggable v-model=\"ingredientsToGuess\" :animation=\"300\" tag=\"ul\" class=\"list-group\" group=\"meals\"\n                    @change=\"checkMove\" item-key=\"1\">\n                    <template #item=\"{ element: meal }\">\n                        <li class=\"list-group-item list-group-item-dark\">{{ meal }}</li>\n                    </template>\n                </draggable>\n            </div>\n            <div class=\"col-12 col-md-6\" style=\"overflow: visible\">\n                <ConfettiExplosion :particleCount=\"200\" :force=\"0.5\" v-if=\"visible\" />\n                <div class=\"row\">\n                    <div class=\"col-12 col-md-6\">\n                        <h2>Ingredients Guessed ({{ ingredientsGuessed.length }})</h2>\n                    </div>\n                    <div class=\"col-12 col-md-6\">\n\n                        <button class=\"btn btn-lg btn-dark w-100\" @click.prevent=\"addIngredient()\">\n                            <div class=\"\">\n                                <span>Save</span>\n\n                                <v-icon name=\"ri-add-circle-fill\" scale=\"1.3\" fill=\"grey\" animation=\"flash\" hover\n                                    style=\"margin-left: 10px; cursor: pointer\" title=\"Add Ingredient\" />\n                            </div>\n                        </button>\n                    </div>\n                </div>\n\n                <draggable v-model=\"ingredientsGuessed\" tag=\"ul\" :animation=\"300\" class=\"list-group\" group=\"meals\"\n                    @change=\"checkMove\" item-key=\"2\">\n                    <template #item=\"{ element: meal }\">\n                        <li class=\"list-group-item list-group-item-success\">{{ meal }}</li>\n                    </template>\n                </draggable>\n            </div>\n        </div>\n    </div>\n    <div class=\"col-12\">\n        <h4>History</h4>\n        <div class=\"row\">\n\n        </div>\n    </div>\n</template>\n\n<script setup>\nimport draggable from \"vuedraggable\";\nimport { onMounted, reactive, ref, nextTick } from \"vue\";\nimport VueMultiselect from \"vue-multiselect\";\nimport customAxios from \"../axios\";\nimport ConfettiExplosion from \"vue-confetti-explosion\";\n\nonMounted(() => {\n    getIngredients();\n});\n\nconst emit = defineEmits([\"ingredientSelectedHAndler\"]);\n\nconst ingredientsToGuess = ref([]);\n\nconst ingredientsGuessed = ref([]);\nconst css_select_pr = ref(\"realtive\");\nconst visible = ref(false);\n\nconst form = reactive({\n    ingredients: [],\n    ingredientsBackup: [],\n    dilutions: [],\n    ingredientSelected: null,\n    dilutionSelected: null,\n    ppt: null,\n    amount: null,\n    quantity: null,\n    total_ppts: null,\n    ppt_per: null,\n\n});\n\nconst checkMove = async (e) => {\n    console.log(e)\n    console.log(e[\"removed\"])\n    if (e[\"added\"] != undefined) {\n        visible.value = false;\n        await nextTick();\n        visible.value = true;\n    }\n\n\n\n}\n\nconst ingredientChange = (event) => {\n    form.dilutions = form.ingredientSelected.dilutions;\n    form.dilutionSelected = Math.min(...form.dilutions.map((dil) => dil.quantity));\n};\n\nconst getIngredients = async () => {\n    form.ingredients = [];\n\n    await customAxios({\n        method: \"get\",\n        url: \"api/v1/ingredients\",\n    })\n        .then((res) => {\n            form.ingredients = res.data;\n            form.ingredientsBackup = res.data;\n        })\n        .catch((error) => {\n            console.error(error.response.data.message);\n        });\n\n    // const alchool = {\n    //   name: \"Alchool\",\n    //   casNumber: \"91-64-5\",\n    //   pyramidLevel: \"alch\",\n    //   odorDescription: \"Acxhool for perfume\",\n    //   type: \"syntetic\",\n    //   odorImpact: 0,\n    //   odorLife: 0,\n    //   dilutions: [\n    //     {\n    //       quantity: 100,\n    //     },\n    //   ],\n    //   olfactiveFamilies: [],\n    // };\n\n    // form.ingredients.push(alchool);\n};\n\nconst addIngredient = () => {\n    console.log(form.ingredientSelected)\n\n    ingredientsToGuess.value.push(form.ingredientSelected['name'])\n    if (ingredientsToGuess.value.length > 2) {\n        css_select_pr.value = \"absolute\"\n    }\n    // console.log(form.amount);\n    // console.log(form.ppt);\n    // console.log(form.total_ppts);\n    // console.log(form.ppt_per)\n    // console.log([form?.amount, form?.ppt, form?.total_ppts, form?.ppt_per]);\n\n};\n</script>\n\n<style scoped>\nli:hover {\n    cursor: pointer;\n}\n\n:deep(.multiselect__content-wrapper) {\n    max-height: 140px !important;\n    z-index: 99;\n    position: v-bind(css_select_pr);\n    display: block;\n}\n</style>",
+								"range":
+								{
+									"end":
+									{
+										"character": 8,
+										"line": 182
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 0
+									}
+								}
+							}
+						],
+						"process_placeholders": false,
+						"required_view_version": null
+					},
+					"AQAAAAAAAAAAAAAADxcAAAAAAADvFgAAPHRlbXBsYXRlPgogICAgPGRpdiBjbGFzcz0iY29sLTEyIGNvbC1tZC0xMiBtdC01IiBzdHlsZT0ibWluLWhlaWdodDogNTB2aDsiPgogICAgICAgIDxkaXYgY2xhc3M9InJvdyI+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC0xMiBjb2wtbWQtNiIgc3R5bGU9InBvc2l0aW9uOiByZWxhdGl2ZTsiPgogICAgICAgICAgICAgICAgPGgyPkluZ3JlZGllbnRzIDxzcGFuIGNsYXNzPSJ0ZXh0LWRhbmdlciI+Tm90PC9zcGFuPiBHdWVzc2VkICh7eyBpbmdyZWRpZW50c1RvR3Vlc3MubGVuZ3RoIH19KTwvaDI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJyb3ciPgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC0xMiBjb2wtbWQtOCI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImZvcm0tZmxvYXRpbmcgbWItMyI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8VnVlTXVsdGlzZWxlY3Qgdi1tb2RlbD0iZm9ybS5pbmdyZWRpZW50U2VsZWN0ZWQiIDpvcHRpb25zPSJmb3JtLmluZ3JlZGllbnRzIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDpjbG9zZS1vbi1zZWxlY3Q9InRydWUiIDpjbGVhci1vbi1zZWxlY3Q9InRydWUiIG1heEhlaWdodD0iMjAwIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEBzZWxlY3Q9ImluZ3JlZGllbnRDaGFuZ2UoJGV2ZW50KSIgcGxhY2Vob2xkZXI9IlNlbGVjdCBJbmdyZWRpZW50IiBsYWJlbD0ibmFtZSIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB0cmFjay1ieT0ibmFtZSIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgPC9kaXY+CgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC0xMiBjb2wtbWQtNCAiPgogICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJidG4gYnRuLWxnIGJ0bi1kYXJrIHctMTAwIiBAY2xpY2sucHJldmVudD0iYWRkSW5ncmVkaWVudCgpIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9IiI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4+QWRkPC9zcGFuPgoKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8di1pY29uIG5hbWU9InJpLWFkZC1jaXJjbGUtZmlsbCIgc2NhbGU9IjEuMyIgZmlsbD0iZ3JleSIgYW5pbWF0aW9uPSJmbGFzaCIgaG92ZXIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc3R5bGU9Im1hcmdpbi1sZWZ0OiAxMHB4OyBjdXJzb3I6IHBvaW50ZXIiIHRpdGxlPSJBZGQgSW5ncmVkaWVudCIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgICAgIDxkcmFnZ2FibGUgdi1tb2RlbD0iaW5ncmVkaWVudHNUb0d1ZXNzIiA6YW5pbWF0aW9uPSIzMDAiIHRhZz0idWwiIGNsYXNzPSJsaXN0LWdyb3VwIiBncm91cD0ibWVhbHMiCiAgICAgICAgICAgICAgICAgICAgQGNoYW5nZT0iY2hlY2tNb3ZlIiBpdGVtLWtleT0iMSI+CiAgICAgICAgICAgICAgICAgICAgPHRlbXBsYXRlICNpdGVtPSJ7IGVsZW1lbnQ6IG1lYWwgfSI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxsaSBjbGFzcz0ibGlzdC1ncm91cC1pdGVtIGxpc3QtZ3JvdXAtaXRlbS1kYXJrIj57eyBtZWFsIH19PC9saT4KICAgICAgICAgICAgICAgICAgICA8L3RlbXBsYXRlPgogICAgICAgICAgICAgICAgPC9kcmFnZ2FibGU+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb2wtMTIgY29sLW1kLTYiIHN0eWxlPSJvdmVyZmxvdzogdmlzaWJsZSI+CiAgICAgICAgICAgICAgICA8Q29uZmV0dGlFeHBsb3Npb24gOnBhcnRpY2xlQ291bnQ9IjIwMCIgOmZvcmNlPSIwLjUiIHYtaWY9InZpc2libGUiIC8+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJyb3ciPgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC0xMiBjb2wtbWQtNiI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxoMj5JbmdyZWRpZW50cyBHdWVzc2VkICh7eyBpbmdyZWRpZW50c0d1ZXNzZWQubGVuZ3RoIH19KTwvaDI+CiAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29sLTEyIGNvbC1tZC02Ij4KICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJidG4gYnRuLWxnIGJ0bi1kYXJrIHctMTAwIiBAY2xpY2sucHJldmVudD0iYWRkSW5ncmVkaWVudCgpIj4KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSIiPgogICAgICAgICAgICAgICAgICAgICAgICA8c3Bhbj5TYXZlPC9zcGFuPgoKICAgICAgICAgICAgICAgICAgICAgICAgPHYtaWNvbiBuYW1lPSJyaS1hZGQtY2lyY2xlLWZpbGwiIHNjYWxlPSIxLjMiIGZpbGw9ImdyZXkiIGFuaW1hdGlvbj0iZmxhc2giIGhvdmVyCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBzdHlsZT0ibWFyZ2luLWxlZnQ6IDEwcHg7IGN1cnNvcjogcG9pbnRlciIgdGl0bGU9IkFkZCBJbmdyZWRpZW50IiAvPgogICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICAgICAgICA8ZHJhZ2dhYmxlIHYtbW9kZWw9ImluZ3JlZGllbnRzR3Vlc3NlZCIgdGFnPSJ1bCIgOmFuaW1hdGlvbj0iMzAwIiBjbGFzcz0ibGlzdC1ncm91cCIgZ3JvdXA9Im1lYWxzIgogICAgICAgICAgICAgICAgICAgIEBjaGFuZ2U9ImNoZWNrTW92ZSIgaXRlbS1rZXk9IjIiPgogICAgICAgICAgICAgICAgICAgIDx0ZW1wbGF0ZSAjaXRlbT0ieyBlbGVtZW50OiBtZWFsIH0iPgogICAgICAgICAgICAgICAgICAgICAgICA8bGkgY2xhc3M9Imxpc3QtZ3JvdXAtaXRlbSBsaXN0LWdyb3VwLWl0ZW0tc3VjY2VzcyI+e3sgbWVhbCB9fTwvbGk+CiAgICAgICAgICAgICAgICAgICAgPC90ZW1wbGF0ZT4KICAgICAgICAgICAgICAgIDwvZHJhZ2dhYmxlPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICAgPGRpdiBjbGFzcz0iY29sLTEyIj4KICAgICAgICA8aDQ+SGlzdG9yeTwvaDQ+CiAgICAgICAgPGRpdiBjbGFzcz0icm93Ij4KCiAgICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KPC90ZW1wbGF0ZT4KCjxzY3JpcHQgc2V0dXA+CmltcG9ydCBkcmFnZ2FibGUgZnJvbSAidnVlZHJhZ2dhYmxlIjsKaW1wb3J0IHsgb25Nb3VudGVkLCByZWFjdGl2ZSwgcmVmLCBuZXh0VGljayB9IGZyb20gInZ1ZSI7CmltcG9ydCBWdWVNdWx0aXNlbGVjdCBmcm9tICJ2dWUtbXVsdGlzZWxlY3QiOwppbXBvcnQgY3VzdG9tQXhpb3MgZnJvbSAiLi4vYXhpb3MiOwppbXBvcnQgQ29uZmV0dGlFeHBsb3Npb24gZnJvbSAidnVlLWNvbmZldHRpLWV4cGxvc2lvbiI7Cgpvbk1vdW50ZWQoKCkgPT4gewogICAgZ2V0SW5ncmVkaWVudHMoKTsKfSk7Cgpjb25zdCBlbWl0ID0gZGVmaW5lRW1pdHMoWyJpbmdyZWRpZW50U2VsZWN0ZWRIQW5kbGVyIl0pOwoKY29uc3QgaW5ncmVkaWVudHNUb0d1ZXNzID0gcmVmKFtdKTsKCmNvbnN0IGluZ3JlZGllbnRzR3Vlc3NlZCA9IHJlZihbXSk7CmNvbnN0IGNzc19zZWxlY3RfcHIgPSByZWYoInJlYWx0aXZlIik7CmNvbnN0IHZpc2libGUgPSByZWYoZmFsc2UpOwoKY29uc3QgZm9ybSA9IHJlYWN0aXZlKHsKICAgIGluZ3JlZGllbnRzOiBbXSwKICAgIGluZ3JlZGllbnRzQmFja3VwOiBbXSwKICAgIGRpbHV0aW9uczogW10sCiAgICBpbmdyZWRpZW50U2VsZWN0ZWQ6IG51bGwsCiAgICBkaWx1dGlvblNlbGVjdGVkOiBudWxsLAogICAgcHB0OiBudWxsLAogICAgYW1vdW50OiBudWxsLAogICAgcXVhbnRpdHk6IG51bGwsCiAgICB0b3RhbF9wcHRzOiBudWxsLAogICAgcHB0X3BlcjogbnVsbCwKCn0pOwoKY29uc3QgY2hlY2tNb3ZlID0gYXN5bmMgKGUpID0+IHsKICAgIGNvbnNvbGUubG9nKGUpCiAgICBjb25zb2xlLmxvZyhlWyJyZW1vdmVkIl0pCiAgICBpZiAoZVsiYWRkZWQiXSAhPSB1bmRlZmluZWQpIHsKICAgICAgICB2aXNpYmxlLnZhbHVlID0gZmFsc2U7CiAgICAgICAgYXdhaXQgbmV4dFRpY2soKTsKICAgICAgICB2aXNpYmxlLnZhbHVlID0gdHJ1ZTsKICAgIH0KCgoKfQoKY29uc3QgaW5ncmVkaWVudENoYW5nZSA9IChldmVudCkgPT4gewogICAgZm9ybS5kaWx1dGlvbnMgPSBmb3JtLmluZ3JlZGllbnRTZWxlY3RlZC5kaWx1dGlvbnM7CiAgICBmb3JtLmRpbHV0aW9uU2VsZWN0ZWQgPSBNYXRoLm1pbiguLi5mb3JtLmRpbHV0aW9ucy5tYXAoKGRpbCkgPT4gZGlsLnF1YW50aXR5KSk7Cn07Cgpjb25zdCBnZXRJbmdyZWRpZW50cyA9IGFzeW5jICgpID0+IHsKICAgIGZvcm0uaW5ncmVkaWVudHMgPSBbXTsKCiAgICBhd2FpdCBjdXN0b21BeGlvcyh7CiAgICAgICAgbWV0aG9kOiAiZ2V0IiwKICAgICAgICB1cmw6ICJhcGkvdjEvaW5ncmVkaWVudHMiLAogICAgfSkKICAgICAgICAudGhlbigocmVzKSA9PiB7CiAgICAgICAgICAgIGZvcm0uaW5ncmVkaWVudHMgPSByZXMuZGF0YTsKICAgICAgICAgICAgZm9ybS5pbmdyZWRpZW50c0JhY2t1cCA9IHJlcy5kYXRhOwogICAgICAgIH0pCiAgICAgICAgLmNhdGNoKChlcnJvcikgPT4gewogICAgICAgICAgICBjb25zb2xlLmVycm9yKGVycm9yLnJlc3BvbnNlLmRhdGEubWVzc2FnZSk7CiAgICAgICAgfSk7CgogICAgLy8gY29uc3QgYWxjaG9vbCA9IHsKICAgIC8vICAgbmFtZTogIkFsY2hvb2wiLAogICAgLy8gICBjYXNOdW1iZXI6ICI5MS02NC01IiwKICAgIC8vICAgcHlyYW1pZExldmVsOiAiYWxjaCIsCiAgICAvLyAgIG9kb3JEZXNjcmlwdGlvbjogIkFjeGhvb2wgZm9yIHBlcmZ1bWUiLAogICAgLy8gICB0eXBlOiAic3ludGV0aWMiLAogICAgLy8gICBvZG9ySW1wYWN0OiAwLAogICAgLy8gICBvZG9yTGlmZTogMCwKICAgIC8vICAgZGlsdXRpb25zOiBbCiAgICAvLyAgICAgewogICAgLy8gICAgICAgcXVhbnRpdHk6IDEwMCwKICAgIC8vICAgICB9LAogICAgLy8gICBdLAogICAgLy8gICBvbGZhY3RpdmVGYW1pbGllczogW10sCiAgICAvLyB9OwoKICAgIC8vIGZvcm0uaW5ncmVkaWVudHMucHVzaChhbGNob29sKTsKfTsKCmNvbnN0IGFkZEluZ3JlZGllbnQgPSAoKSA9PiB7CiAgICBjb25zb2xlLmxvZyhmb3JtLmluZ3JlZGllbnRTZWxlY3RlZCkKCiAgICBpbmdyZWRpZW50c1RvR3Vlc3MudmFsdWUucHVzaChmb3JtLmluZ3JlZGllbnRTZWxlY3RlZFsnbmFtZSddKQogICAgaWYgKGluZ3JlZGllbnRzVG9HdWVzcy52YWx1ZS5sZW5ndGggPiAyKSB7CiAgICAgICAgY3NzX3NlbGVjdF9wci52YWx1ZSA9ICJhYnNvbHV0ZSIKICAgIH0KICAgIC8vIGNvbnNvbGUubG9nKGZvcm0uYW1vdW50KTsKICAgIC8vIGNvbnNvbGUubG9nKGZvcm0ucHB0KTsKICAgIC8vIGNvbnNvbGUubG9nKGZvcm0udG90YWxfcHB0cyk7CiAgICAvLyBjb25zb2xlLmxvZyhmb3JtLnBwdF9wZXIpCiAgICAvLyBjb25zb2xlLmxvZyhbZm9ybT8uYW1vdW50LCBmb3JtPy5wcHQsIGZvcm0/LnRvdGFsX3BwdHMsIGZvcm0/LnBwdF9wZXJdKTsKCn07Cjwvc2NyaXB0PgoKPHN0eWxlIHNjb3BlZD4KbGk6aG92ZXIgewogICAgY3Vyc29yOiBwb2ludGVyOwp9Cgo6ZGVlcCgubXVsdGlzZWxlY3RfX2NvbnRlbnQtd3JhcHBlcikgewogICAgbWF4LWhlaWdodDogMTQwcHggIWltcG9ydGFudDsKICAgIHotaW5kZXg6IDk5OwogICAgcG9zaXRpb246IHYtYmluZChjc3Nfc2VsZWN0X3ByKTsKICAgIGRpc3BsYXk6IGJsb2NrOwp9Cjwvc3R5bGU+",
+					"AQAAAAAAAAABAAAAfQoAAAAAAAB9CgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					874,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Delete Line.sublime-macro"
+					},
+					"AQAAALsIAAAAAAAAuwgAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAuwgAAAAAAAC7CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					884,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AgAAAPYIAAAAAAAA9wgAAAAAAAAAAAAA9wgAAAAAAAD3CAAAAAAAAAUAAAB3LTEwMA",
+					"AQAAAAAAAAABAAAA+wgAAAAAAAD2CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					886,
+					2,
+					"left_delete",
+					null,
+					"AgAAAPYIAAAAAAAA9ggAAAAAAAABAAAAIPUIAAAAAAAA9QgAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAA9wgAAAAAAAD3CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					894,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAALgIAAAAAAAAuQgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAuAgAAAAAAAC4CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					896,
+					1,
+					"insert",
+					{
+						"characters": "text"
+					},
+					"BAAAALkIAAAAAAAAuggAAAAAAAAAAAAAuggAAAAAAAC7CAAAAAAAAAAAAAC7CAAAAAAAALwIAAAAAAAAAAAAALwIAAAAAAAAvQgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAuQgAAAAAAAC5CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					897,
+					1,
+					"insert",
+					{
+						"characters": "-r"
+					},
+					"AgAAAL0IAAAAAAAAvggAAAAAAAAAAAAAvggAAAAAAAC/CAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvQgAAAAAAAC9CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					903,
+					1,
+					"insert",
+					{
+						"characters": "ig"
+					},
+					"AgAAAL8IAAAAAAAAwAgAAAAAAAAAAAAAwAgAAAAAAADBCAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvwgAAAAAAAC/CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					904,
+					3,
+					"left_delete",
+					null,
+					"AwAAAMAIAAAAAAAAwAgAAAAAAAABAAAAZ78IAAAAAAAAvwgAAAAAAAABAAAAab4IAAAAAAAAvggAAAAAAAABAAAAcg",
+					"AQAAAAAAAAABAAAAwQgAAAAAAADBCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					906,
+					1,
+					"insert",
+					{
+						"characters": "ce"
+					},
+					"AgAAAL4IAAAAAAAAvwgAAAAAAAAAAAAAvwgAAAAAAADACAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvggAAAAAAAC+CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					908,
+					1,
+					"left_delete",
+					null,
+					"AQAAAL8IAAAAAAAAvwgAAAAAAAABAAAAZQ",
+					"AQAAAAAAAAABAAAAwAgAAAAAAADACAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					910,
+					1,
+					"left_delete",
+					null,
+					"AQAAAL4IAAAAAAAAvggAAAAAAAABAAAAYw",
+					"AQAAAAAAAAABAAAAvwgAAAAAAAC/CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					912,
+					1,
+					"insert",
+					{
+						"characters": "r"
+					},
+					"AQAAAL4IAAAAAAAAvwgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvggAAAAAAAC+CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					914,
+					1,
+					"left_delete",
+					null,
+					"AQAAAL4IAAAAAAAAvggAAAAAAAABAAAAcg",
+					"AQAAAAAAAAABAAAAvwgAAAAAAAC/CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					915,
+					1,
+					"insert",
+					{
+						"characters": "e"
+					},
+					"AQAAAL4IAAAAAAAAvwgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvggAAAAAAAC+CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					916,
+					1,
+					"insert_completion",
+					{
+						"completion": "text-end",
+						"format": "text",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "text-end"
+					},
+					"AgAAALkIAAAAAAAAuQgAAAAAAAAGAAAAdGV4dC1luQgAAAAAAADBCAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvwgAAAAAAAC/CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					928,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AgAAAH8JAAAAAAAAgAkAAAAAAAAAAAAAgAkAAAAAAACACQAAAAAAANsAAAAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8di1pY29uIG5hbWU9InJpLWFkZC1jaXJjbGUtZmlsbCIgc2NhbGU9IjEuMyIgZmlsbD0iZ3JleSIgYW5pbWF0aW9uPSJmbGFzaCIgaG92ZXIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc3R5bGU9Im1hcmdpbi1sZWZ0OiAxMHB4OyBjdXJzb3I6IHBvaW50ZXIiIHRpdGxlPSJBZGQgSW5ncmVkaWVudCIgLz4",
+					"AQAAAAAAAAABAAAAWgoAAAAAAAB/CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					931,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Delete Line.sublime-macro"
+					},
+					"AQAAAH8JAAAAAAAAfwkAAAAAAAACAAAAIAo",
+					"AQAAAAAAAAABAAAAgAkAAAAAAACACQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					935,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AgAAAO8IAAAAAAAA8AgAAAAAAAAAAAAA8AgAAAAAAADwCAAAAAAAAAcAAABidG4tbGcg",
+					"AQAAAAAAAAABAAAA9ggAAAAAAADvCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					944,
+					1,
+					"insert",
+					{
+						"characters": " w-100"
+					},
+					"BgAAAPgIAAAAAAAA+QgAAAAAAAAAAAAA+QgAAAAAAAD6CAAAAAAAAAAAAAD6CAAAAAAAAPsIAAAAAAAAAAAAAPsIAAAAAAAA/AgAAAAAAAAAAAAA/AgAAAAAAAD9CAAAAAAAAAAAAAD9CAAAAAAAAP4IAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA+AgAAAAAAAD4CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					951,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAACULAAAAAAAAJgsAAAAAAAAAAAAAJgsAAAAAAAA+CwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAJQsAAAAAAAAlCwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					958,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"BAAAAEgLAAAAAAAASQsAAAAAAAAAAAAASQsAAAAAAABhCwAAAAAAAAAAAABJCwAAAAAAAEkLAAAAAAAAGAAAACAgICAgICAgICAgICAgICAgICAgICAgIEkLAAAAAAAAXQsAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAASAsAAAAAAABICwAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "src/App.vue",
+			"settings":
+			{
+				"buffer_size": 180,
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"INSTALL",
+				"Package Control: Install Package"
+			],
+			[
+				"ter",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"debugger",
+				"Debugger: Add Configuration"
+			],
+			[
+				"de",
+				"Debugger: Edit Configurations"
+			],
+			[
+				"openai",
+				"OpenAI: New Message"
+			],
+			[
+				"ope",
+				"OpenAI: Reset Chat History"
+			],
+			[
+				"open",
+				"OpenAI: Chat Model Select With Sheets"
+			],
+			[
+				"install",
+				"Debugger: Install Adapters"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"terminus sele",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"ACTIVA",
+				"ayu: Activate theme"
+			],
+			[
+				"INST",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"terminus ope",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"termin",
+				"Terminus: Toggle Panel"
+			],
+			[
+				"opena",
+				"OpenAI: New Message"
+			],
+			[
+				"MarkdownEditing",
+				"MarkdownEditing: New Footnote"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"ollama",
+				"Ollama: Query Selected Text"
+			],
+			[
+				"PackageResourceViewer",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"y",
+				"Yollama: Ask about file or selection"
+			],
+			[
+				"Package Control: rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"yo",
+				"Yollama: Ask about file or selection"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"git ",
+				"Set Syntax: Git Code Owners"
+			],
+			[
+				"Git Line Info",
+				"Plugin Development: Profile Events"
+			],
+			[
+				"Package Control: remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"materialize",
+				"Activate Materialize Theme"
+			],
+			[
+				"",
+				"Activate Materialize Theme"
+			],
+			[
+				"mono",
+				"Monokai Pro: select theme"
+			],
+			[
+				"lsp-",
+				"Preferences: LSP-jdtls Settings"
+			],
+			[
+				"lsp",
+				"LSP: Troubleshoot Server"
+			],
+			[
+				"LSP-",
+				"LSP-jdtls: Clear data"
+			],
+			[
+				"LSP",
+				"Preferences: LSP-jdtls Settings"
+			],
+			[
+				"LSP-D",
+				"Preferences: LSP-jdtls Settings"
+			],
+			[
+				"enable",
+				"LSP: Enable Language Server Globally"
+			],
+			[
+				"add",
+				"Package Control: Add Repository"
+			],
+			[
+				"terminus",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"toggle",
+				"Terminus: Toggle Panel"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"forma",
+				"Formatter: Beautify With Prettier"
+			],
+			[
+				"ht",
+				"HTMLBeautify"
+			],
+			[
+				"html",
+				"HTMLBeautify"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 258.0,
+		"history":
+		[
+			"pip",
+			"import subprocess; subprocess.run([\"pip\", \"install\", \"--target\", sublime.packages_path() + \"/User\", \"pexpect\"])\n",
+			"pip install pexpect",
+			"import subprocess; subprocess.run([\"pip\", \"install\", \"--target\", sublime.packages_path() + \"/User\", \"pexpect\"])\n",
+			"import subprocess; subprocess.run([\"pip\", \"install\", \"--target\", sublime.packages_path() + \"/User\", \"chardet\"])\n",
+			"import subprocess; subprocess.run([\"pip\", \"install\", \"--target\", sublime.packages_path() + \"/User\", \"idna\"])\n",
+			"import subprocess; subprocess.run([\"pip\", \"install\", \"--target\", sublime.packages_path() + \"/User\", \"urllib3\"])\n",
+			"import subprocess; subprocess.run([\"pip\", \"install\", \"--target\", sublime.packages_path() + \"/User\", \"gitpython\"])\n",
+			"import subprocess; subprocess.run([\"pip\", \"install\", \"--target\", sublime.packages_path()",
+			"import subprocess; subprocess.run([\"pip\", \"install\", \"--target\", sublime.packages_path() + \"/User\", \"gitpython\"])\n",
+			"import sys; print(sys.path)",
+			"import subprocess; subprocess.run([\"pip\", \"install\", \"--target\", sublime.packages_path() + \"/User\", \"gitpython\"])\n",
+			"view.run_command(\"git_commit_info\")",
+			"view.run_command(\"git_blame_popup\")",
+			"view.run_command(\"git_commit_info\")",
+			"view.set_status(\"git_blame\", \"\")",
+			"view.run_command(\"show_git_author_popup\")",
+			"sublime_plugin.reload_plugin('User.git_author_plugin')",
+			"window.run_command(\"toggle_menu\")",
+			"sublime.set_menu_visible(True)",
+			"sublime_plugin.reload_plugin('IntegratedTerminal')\n",
+			"sublime_plugin.reload_plugin('IntegratedTerminal')",
+			"view.run_command('example')",
+			"ExampleCommand.run",
+			"example_command",
+			"ExampleCommand",
+			"example_three_command",
+			"ExampleThreeCommand",
+			"view.file_name()",
+			"jsbeautify"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/amade/Documents/perfumir-front",
+		"/C/Users/amade/Documents/perfumir-front/src",
+		"/C/Users/amade/Documents/perfumir-front/src/views"
+	],
+	"file_history":
+	[
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/RainbowBrackets/README.md",
+		"/C/Users/amade/Documents/perfumir-front/src/views/Recognition.vue",
+		"/C/Users/amade/Documents/perfumir-front/perfumir.sublime-project",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/services/impl/RecognitionServiceImpl.java",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/services/impl/FormulaManagementSerrviceImpl.java",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/entities/FormulaManagement.java",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/services/impl/UserServiceImpl.java",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/entities/Recognition.java",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/services/impl/AuthenticationServiceImpl.java",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/services/impl/ProjectServiceImpl.java",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/services/impl/DilutionServiceImpl.java",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/services/impl/FormulaServiceImpl.java",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/services/impl/OlfativeFamiliesServiceImpl.java",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/services/OlfativeFamiliesService.java",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/services/FormulaService.java",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/dto/SignUpRequest.java",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/repository/UserRepository.java",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/services/JWTService.java",
+		"/C/Users/amade/Documents/perfumir_api_java/perfumir.sublime-project",
+		"/C/Users/amade/Documents/perfumir-front/src/components/projects/FormulaView.vue",
+		"/C/Users/amade/Documents/perfumir-front/src/App.vue",
+		"/C/Users/amade/Documents/perfumir-front/src/components/Home.vue",
+		"/C/Users/amade/Documents/perfumir-front/src/components/projects/Formula.vue",
+		"/C/Users/amade/Documents/perfumir_api_java/docker-compose.dev.yaml",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/resources/application-dev.properties",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/User/Python.sublime-build",
+		"/C/Users/amade/Documents/perfumir_api_java/changelog.md",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/entities/Formula.java",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/resources/application.properties",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/services/impl/FormulaIngredientServiceImpl.java",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/repository/FormulaManagementRepository.java",
+		"/C/Users/amade/Downloads/drive-download-20241203T195426Z-001/application.properties",
+		"/C/Users/amade/Downloads/drive-download-20241203T195426Z-001/application-dev.properties",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/entities/FormulaIngredient.java",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/Python/Python.sublime-build",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/User/Yollama.sublime-settings",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/User/GitGutter.sublime-settings",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/GitGutter/GitGutter.sublime-settings",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/dto/ProjectDto.java",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/config/OpenAPIConfig.java",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/config/SecurityConfiguration.java",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/User/git_commit_info.py",
+		"/C/Users/amade/Documents/llms/qwen-32/MODELFILE",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/services/impl/IngredientServiceImpl.java",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/services/impl/JWTServiceImpl.java",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/controllers/FormulaIngredientController.java",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/User/openAI.sublime-settings",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/OpenAI completion/openAI.sublime-settings",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/controllers/CommentController.java",
+		"/C/Users/amade/Documents/curso_python/data_class/main.py",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/IntegratedTerminal/IntegratedTerminal.py",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/controllers/IngredientController.java",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/User/SpringBoot.sublime-build",
+		"/C/Users/amade/Documents/perfumir_api_java/src/main/java/com/amadeuscam/perfumir_api/PerfumirApiApplication.java",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/Terminus/themes/spring.json",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/User/LSP-jdtls.sublime-settings",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/LSP-jdtls/LSP-jdtls.sublime-settings",
+		"/C/Users/amade/Downloads/demo/src/main/java/com/amadeusca/demo/DemoApplication.java",
+		"/C/Users/amade/Documents/oasis/src/main/java/com/amadeuscam/oasis/OasisApplication.java",
+		"/C/Users/amade/Documents/python/oop/ex.py",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/HTMLBeautify/HTMLBeautify.sublime-settings",
+		"/C/Users/amade/Documents/test.html",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/User/HTMLBeautify.sublime-settings",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/JsFormat/JsFormat.sublime-settings",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/JsPrettier/messages/install.txt",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/Javascript Beautify/Default (Windows).sublime-keymap",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/JsFormat/Default (Windows).sublime-keymap",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/Javascript Beautify/JavascriptBeautify.sublime-settings",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc.defaults.json",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/User/.jsbeautifyrc.json",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/User/.jsbeautifyrc",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/Default (Windows).sublime-keymap",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/amade/AppData/Roaming/Sublime Text 3/Packages/EsFormatter/Default (Windows).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 47.0
+	},
+	"find_in_files":
+	{
+		"height": 164.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/views/Recognition.vue",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5731,
+						"regions":
+						{
+							"_rb_l0":
+							{
+								"flags": 272,
+								"regions":
+								[
+									[
+										250,
+										251
+									],
+									[
+										282,
+										283
+									],
+									[
+										689,
+										690
+									],
+									[
+										696,
+										697
+									],
+									[
+										1000,
+										1001
+									],
+									[
+										1001,
+										1002
+									],
+									[
+										1643,
+										1644
+									],
+									[
+										1659,
+										1660
+									],
+									[
+										1736,
+										1737
+									],
+									[
+										1745,
+										1746
+									],
+									[
+										2119,
+										2120
+									],
+									[
+										2151,
+										2152
+									],
+									[
+										2333,
+										2334
+									],
+									[
+										2334,
+										2335
+									],
+									[
+										2757,
+										2758
+									],
+									[
+										2773,
+										2774
+									],
+									[
+										2878,
+										2879
+									],
+									[
+										2887,
+										2888
+									],
+									[
+										3197,
+										3198
+									],
+									[
+										3234,
+										3235
+									],
+									[
+										3396,
+										3397
+									],
+									[
+										3428,
+										3429
+									],
+									[
+										3456,
+										3457
+									],
+									[
+										3486,
+										3487
+									],
+									[
+										3520,
+										3521
+									],
+									[
+										3523,
+										3524
+									],
+									[
+										3557,
+										3558
+									],
+									[
+										3560,
+										3561
+									],
+									[
+										3588,
+										3589
+									],
+									[
+										3599,
+										3600
+									],
+									[
+										3621,
+										3622
+									],
+									[
+										3627,
+										3628
+									],
+									[
+										3652,
+										3653
+									],
+									[
+										3876,
+										3877
+									],
+									[
+										3904,
+										3905
+									],
+									[
+										3906,
+										3907
+									],
+									[
+										3911,
+										3912
+									],
+									[
+										4093,
+										4094
+									],
+									[
+										4121,
+										4122
+									],
+									[
+										4127,
+										4128
+									],
+									[
+										4132,
+										4133
+									],
+									[
+										4274,
+										4275
+									],
+									[
+										4307,
+										4308
+									],
+									[
+										4308,
+										4309
+									],
+									[
+										4313,
+										4314
+									],
+									[
+										5059,
+										5060
+									],
+									[
+										5085,
+										5086
+									],
+									[
+										5086,
+										5087
+									],
+									[
+										5091,
+										5092
+									],
+									[
+										5510,
+										5511
+									],
+									[
+										5548,
+										5549
+									],
+									[
+										5571,
+										5572
+									],
+									[
+										5579,
+										5580
+									],
+									[
+										5609,
+										5610
+									],
+									[
+										5611,
+										5612
+									],
+									[
+										5721,
+										5722
+									]
+								],
+								"scope": "l0._rb"
+							},
+							"_rb_l1":
+							{
+								"flags": 272,
+								"regions":
+								[
+									[
+										251,
+										252
+									],
+									[
+										281,
+										282
+									],
+									[
+										1737,
+										1738
+									],
+									[
+										1744,
+										1745
+									],
+									[
+										2120,
+										2121
+									],
+									[
+										2150,
+										2151
+									],
+									[
+										2879,
+										2880
+									],
+									[
+										2886,
+										2887
+									],
+									[
+										3397,
+										3398
+									],
+									[
+										3398,
+										3399
+									],
+									[
+										3403,
+										3404
+									],
+									[
+										3427,
+										3428
+									],
+									[
+										3457,
+										3458
+									],
+									[
+										3485,
+										3486
+									],
+									[
+										3521,
+										3522
+									],
+									[
+										3522,
+										3523
+									],
+									[
+										3558,
+										3559
+									],
+									[
+										3559,
+										3560
+									],
+									[
+										3653,
+										3654
+									],
+									[
+										3875,
+										3876
+									],
+									[
+										3928,
+										3929
+									],
+									[
+										3930,
+										3931
+									],
+									[
+										3947,
+										3948
+									],
+									[
+										3960,
+										3961
+									],
+									[
+										3969,
+										3970
+									],
+									[
+										3993,
+										3994
+									],
+									[
+										3995,
+										3996
+									],
+									[
+										4088,
+										4089
+									],
+									[
+										4226,
+										4227
+									],
+									[
+										4271,
+										4272
+									],
+									[
+										4338,
+										4339
+									],
+									[
+										4339,
+										4340
+									],
+									[
+										4364,
+										4365
+									],
+									[
+										4430,
+										4431
+									],
+									[
+										4445,
+										4446
+									],
+									[
+										4554,
+										4555
+									],
+									[
+										4570,
+										4571
+									],
+									[
+										4649,
+										4650
+									],
+									[
+										5108,
+										5109
+									],
+									[
+										5132,
+										5133
+									],
+									[
+										5168,
+										5169
+									],
+									[
+										5200,
+										5201
+									],
+									[
+										5209,
+										5210
+									],
+									[
+										5245,
+										5246
+									],
+									[
+										5247,
+										5248
+									],
+									[
+										5294,
+										5295
+									],
+									[
+										5684,
+										5685
+									],
+									[
+										5698,
+										5699
+									]
+								],
+								"scope": "l1._rb"
+							},
+							"_rb_l2":
+							{
+								"flags": 272,
+								"regions":
+								[
+									[
+										252,
+										253
+									],
+									[
+										280,
+										281
+									],
+									[
+										2121,
+										2122
+									],
+									[
+										2149,
+										2150
+									],
+									[
+										3423,
+										3424
+									],
+									[
+										3424,
+										3425
+									],
+									[
+										3672,
+										3673
+									],
+									[
+										3673,
+										3674
+									],
+									[
+										3699,
+										3700
+									],
+									[
+										3700,
+										3701
+									],
+									[
+										3718,
+										3719
+									],
+									[
+										3719,
+										3720
+									],
+									[
+										3949,
+										3950
+									],
+									[
+										3959,
+										3960
+									],
+									[
+										3971,
+										3972
+									],
+									[
+										3979,
+										3980
+									],
+									[
+										4050,
+										4051
+									],
+									[
+										4051,
+										4052
+									],
+									[
+										4248,
+										4249
+									],
+									[
+										4270,
+										4271
+									],
+									[
+										4365,
+										4366
+									],
+									[
+										4429,
+										4430
+									],
+									[
+										4446,
+										4447
+									],
+									[
+										4450,
+										4451
+									],
+									[
+										4455,
+										4456
+									],
+									[
+										4553,
+										4554
+									],
+									[
+										4571,
+										4572
+									],
+									[
+										4577,
+										4578
+									],
+									[
+										4582,
+										4583
+									],
+									[
+										4648,
+										4649
+									],
+									[
+										5192,
+										5193
+									],
+									[
+										5199,
+										5200
+									]
+								],
+								"scope": "l2._rb"
+							},
+							"_rb_l3":
+							{
+								"flags": 272,
+								"regions":
+								[
+									[
+										4249,
+										4250
+									],
+									[
+										4253,
+										4254
+									],
+									[
+										4609,
+										4610
+									],
+									[
+										4637,
+										4638
+									]
+								],
+								"scope": "l3._rb"
+							}
+						},
+						"selection":
+						[
+							[
+								2994,
+								2994
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ".\"'`/<@# *-:=>+^()[]${}",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "LSP-vue"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_gutter_is_enabled": true,
+							"lsp_active": true,
+							"lsp_uri": "file:///C:/Users/amade/Documents/perfumir-front/src/views/Recognition.vue",
+							"show_definitions": false,
+							"syntax": "Packages/Vue Syntax Highlight/Vue Component.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 709.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/App.vue",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 180,
+						"regions":
+						{
+							"_rb_l0":
+							{
+								"flags": 272,
+								"regions":
+								[
+									[
+										118,
+										119
+									],
+									[
+										143,
+										144
+									]
+								],
+								"scope": "l0._rb"
+							},
+							"_rb_l1":
+							{
+								"flags": 272,
+								"regions":
+								[
+									[
+										134,
+										135
+									],
+									[
+										140,
+										141
+									]
+								],
+								"scope": "l1._rb"
+							}
+						},
+						"selection":
+						[
+							[
+								145,
+								145
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ".\"'`/<@# *-:=>+^()[]${}",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "LSP-vue"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_gutter_is_enabled": true,
+							"lsp_active": true,
+							"lsp_uri": "file:///C:/Users/amade/Documents/perfumir-front/src/App.vue",
+							"show_definitions": false,
+							"syntax": "Packages/Vue Syntax Highlight/Vue Component.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 47.0
+	},
+	"input":
+	{
+		"height": 69.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.AI Chat":
+	{
+		"height": 323.0
+	},
+	"output.Build Panel":
+	{
+		"height": 279.0
+	},
+	"output.Debugger":
+	{
+		"height": 348.0
+	},
+	"output.Debugger Console":
+	{
+		"height": 207.0
+	},
+	"output.LSP Log Panel":
+	{
+		"height": 278.0
+	},
+	"output.Terminus":
+	{
+		"height": 125.0
+	},
+	"output.Terminus 1":
+	{
+		"height": 240.0
+	},
+	"output.Terminus 2":
+	{
+		"height": 274.0
+	},
+	"output.diagnostics":
+	{
+		"height": 138.0
+	},
+	"output.exec":
+	{
+		"height": 322.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git_line_details":
+	{
+		"height": 156.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups-dummy":
+	{
+		"height": 0.0
+	},
+	"output.ollama_result":
+	{
+		"height": 250.0
+	},
+	"output.yollama":
+	{
+		"height": 553.0
+	},
+	"pinned_build_system": "Packages/User/SpringBoot.sublime-build",
+	"project": "perfumir.sublime-project",
+	"replace":
+	{
+		"height": 90.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"lsp_show_inlay_hints": true
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 424.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
